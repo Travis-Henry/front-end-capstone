@@ -8,7 +8,7 @@
     -Brian Ortiz
     -Travis Henry
 
-#Git commands
+# Git commands
     -git checkout -b your-branch-name
     -git push
     -Do your work here
