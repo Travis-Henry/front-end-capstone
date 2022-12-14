@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS cast
 DROP TABLE IF EXISTS movies;
 DROP TABLE IF EXISTS reviews;
 
@@ -14,6 +15,7 @@ CREATE TABLE movies (
   poster
 );
 
+<<<<<<< HEAD
 -- Review Table
 CREATE TABLE reviews (
   review_id serial,
@@ -21,3 +23,12 @@ CREATE TABLE reviews (
   content TEXT,
   movies_id FOREIGN KEY
 );
+=======
+CREATE TABLE cast(
+  cast_id SERIAL,
+  name VARCHAR(50),
+  photo TEXT,
+  character VARCHAR(50),
+  movie_id FOREIGN KEY
+);
+>>>>>>> dev
