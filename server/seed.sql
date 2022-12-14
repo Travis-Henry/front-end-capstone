@@ -26,6 +26,9 @@ movieName varchar(50),
 
 
 
+
+
+
 //Cast info for Count of Monte Cristo
   INSERT INTO cast (name, character, movie_id, photo)
 VALUES ('Jim Caviezel', 'Edmond', 1, 'https://m.media-amazon.com/images/M/MV5BMTc2Nzk0MTY4MV5BMl5BanBnXkFtZTcwMjA3NTY5Mg@@._V1_QL75_UY207_CR3,0,140,207_.jpg'),
@@ -46,3 +49,13 @@ VALUES ('Jim Caviezel', 'Edmond', 1, 'https://m.media-amazon.com/images/M/MV5BMT
        ('Joe Hanley', 'Partygoer No. 1', 1),
        ('Richard Harris', 'Abbe Faria', 1, 'https://m.media-amazon.com/images/M/MV5BMTgzNTA5ODg1NV5BMl5BanBnXkFtZTcwMDU3MTU5Mw@@._V1_QL75_UY207_CR8,0,140,207_.jpg'),
        ('Katherine Holme', 'Julianne', 1);
+
+
+
+
+
+
+
+
+
+
