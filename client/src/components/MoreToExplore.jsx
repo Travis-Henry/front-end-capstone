@@ -1,5 +1,5 @@
 function MoreToExplore() {
-  return <div>More to MoreToExplore</div>;
+  return <div>More to MoreToExplore TEST</div>;
 }
 
 export default MoreToExplore;
