@@ -2,12 +2,12 @@ DROP TABLE IF EXISTS movies;
 
 CREATE TABLE movies (
   id serial,
-  movieName varchar(50),
-  releaseDate varchar(20),
-  studio varchar(50),
-  language varchar(25),
-  budget int,
-  sales int
+  movieName varchar(255),
+  releaseDate date,
+  studio varchar(255),
+  language varchar(255),
+  budget numeric,
+  globalsales numeric,
   plot text,
-  poster
+  poster text
 );

@@ -1,19 +1,7 @@
-INSERT INTO movies 
-(movieName, releaseDate, studio, language, budget, sales, poster) 
-VALUES ('The Count of Monte Cristo'), 
-('Pacific Rim'), 
-('Book of Eli'), 
-('Intersteller'), 
-('Glass')
-
-INSERT INTO movies (plot)
-VALUES (random_paragraph(50, 500))
-
-movieName varchar(50),
-  releaseDate varchar(20),
-  studio varchar(50),
-  language varchar(25),
-  budget int,
-  sales int
-  plot text,
-  poster text
+INSERT INTO movies (movieName, releaseDate, studio, language, budget, globalsales, plot, poster)
+VALUES 
+('The Count of Monte Cristo', '2002-01-25', 'Touchstone Pictures', 'English', '100000', '1000000', 'In 19th-century France, a sailor falsely imprisoned for murder envisions a plan for revenge.', NULL),
+('Pacific Rim', '2013-07-12', 'Legendary Pictures', 'English', '190000000', '410500000', 'As a war between humankind and monstrous sea creatures wages on, a former pilot and a trainee are paired up to drive a seemingly obsolete special weapon in a desperate effort to save the world from the apocalypse.', NULL),
+('Book of Eli', '2010-01-14', 'Alcon Entertainment', 'English', '80000000', '157000000', 'A post-apocalyptic tale, in which a lone man fights his way across America in order to protect a sacred book that holds the secrets to saving humankind.', NULL),
+('Interstellar', '2014-11-05', 'Paramount Pictures', 'English', '165000000', '670000000', 'A team of explorers travel through a wormhole in space in an attempt to ensure the survival of humanity.', NULL),
+('Glass', '2019-01-16', 'Buena Vista Pictures', 'English', '20000000', '24900000', 'Security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities.', NULL)
