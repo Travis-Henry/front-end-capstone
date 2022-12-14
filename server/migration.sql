@@ -1,4 +1,6 @@
 DROP TABLE IF EXISTS movies;
+DROP TABLE IF EXISTS reviews;
+
 
 CREATE TABLE movies (
   id serial,
@@ -10,4 +12,12 @@ CREATE TABLE movies (
   sales int
   plot text,
   poster
+);
+
+-- Review Table
+CREATE TABLE reviews (
+  review_id serial,
+  username varchar(50),
+  content TEXT,
+  movies_id FOREIGN KEY
 );
