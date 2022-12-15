@@ -9,15 +9,24 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [movieID, setMovieID] = useState(1);
   const [currentMovie, setCurrentMovie] = useState({});
 
+  //Get request for movie data
   useEffect(() => {
     axios
-      .get("http://localhost:3001/movie/1")
-      .then((res) => console.log(res.data))
+      .get(`http://localhost:3001/movie/${movieID}`)
+      .then((res) => {
+        console.log(res.data);
+        setCurrentMovie(res.data);
+      })
       .catch((error) => console.log(error));
-  }, []);
+  }, [movieID]);
+
+  const pageData = {
+    setMovieID: setMovieID,
+    currentMovie: currentMovie,
+  };
 
   return (
     <div className="App">
