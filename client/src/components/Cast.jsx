@@ -1,5 +1,12 @@
+import { CardGroup } from "react-bootstrap";
+import CastCard from "./CastCard";
+
 function Cast() {
-  return <div>Cast</div>;
+  return (
+    <CardGroup id="cardGroup">
+      <CastCard />
+    </CardGroup>
+  );
 }
 
 export default Cast;
