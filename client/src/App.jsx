@@ -25,15 +25,17 @@ function App() {
   }, [movieID]);
 
   const pageContext = {
-    setMovieID: setMovieID,
+    // setMovieID: setMovieID,
     currentMovie: currentMovie,
+    setCurrentMovie: setCurrentMovie,
+
   };
 
   return (
     <listContextStates.Provider value={{ ...pageContext }}>
       <div className="App">
         <Primary />
-        <Details />
+        <Details details={currentMovie}/>
         <MoreToExplore />
         <Cast />
         <Reviews />

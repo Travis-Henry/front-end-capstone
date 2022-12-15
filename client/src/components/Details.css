@@ -1,5 +1,4 @@
 .movie-details{
-    background: black;
     margin: 0px 0px 8px;
     padding: 16px 0px;
     color: #E8E6E3DE;
@@ -22,3 +21,22 @@
 strong:hover{
     background-color: yellow;
 }
+
+/* .section-detail{
+    background-color: #1B1D1E;
+    margin: 0px 0px 8px;
+    padding: 16px 0px;
+}
+.div-header{
+    display: flex;
+    flex-wrap: wrap;
+}
+.h3-title:before{
+    background-color: yellow;
+    border-radius: 50%;
+    margin-left: -0.75rem;
+    align-self: flex-start;
+    position: absolute;
+    height: 100%;
+    width: 4px;
+} */

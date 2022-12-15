@@ -1,24 +1,31 @@
 import { Card } from "react-bootstrap";
 import ListGroup from 'react-bootstrap/ListGroup';
 import "./Details.css";
+import { useContext } from 'react';
+import { listContextStates } from "../App";
+import { useState} from 'react';
 
-function Details() {
+function Details(props) {
+  const [currentDetails, setCurrentDetails] = useState(listContextStates)
   return (
-      <ListGroup variant="flush" className="movie-details">
-        <ListGroup.Item className="details-title"><strong className="strong">|</strong>Movie Details</ListGroup.Item>
-        <ListGroup.Item className="details">Release Date</ListGroup.Item>
-        <ListGroup.Item className="details">Studio</ListGroup.Item>
-        <ListGroup.Item className="details">Language</ListGroup.Item>
-        <ListGroup.Item className="details">Budget</ListGroup.Item>
-        <ListGroup.Item className="details">Sales</ListGroup.Item>
-      </ListGroup>
+    <div>
+        <ListGroup variant="flush" className="movie-details">
+          <ListGroup.Item className="details-title"><strong className="strong">|</strong>Movie Details</ListGroup.Item>
+          <ListGroup.Item className="details">Release Date {props.details.releasedate}</ListGroup.Item>
+          <ListGroup.Item className="details">Studio {props.details.studio}</ListGroup.Item>
+          <ListGroup.Item className="details">Language {props.details.language}</ListGroup.Item>
+          <ListGroup.Item className="details">Budget {props.details.budget}</ListGroup.Item>
+          <ListGroup.Item className="details">Sales {props.details.globalsales}</ListGroup.Item>
+        </ListGroup> 
+     
+    {console.log(props.details)}
+    </div>
 
 
 /* <section className="section-detail">
-  <div className="div-header">s
+  <div className="div-header">
     <hgroup>
-      <h3>
-        ::before
+      <h3 className="h3-title">
         <span>Movie Details</span>
       </h3>
     </hgroup>
@@ -62,7 +69,7 @@ function Details() {
       </li>
     </ul>
   </div>
-</section> */
+</section>  */
 
   );
 }
