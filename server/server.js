@@ -13,17 +13,32 @@ const PORT = config.port;
 app.use(cors());
 app.use(express.json());
 
-//Test route
-app.get('/test', (req, res, next)=>{
+//Get movie data route
+app.get('/movie/:id', (req, res, next)=>{
 
+    let movie = {}
 
-    pool.query(`SELECT * FROM movies`)
+    //First query to get movie
+    pool.query(`SELECT * FROM movies WHERE id = ${req.params.id}`)
     .then(results=>{
-        res.send(results.rows);
+
+        //Second query to get reviews
+        pool.query(`SELECT * FROM reviews WHERE movie_id = ${req.params.id}`)
+        .then(reviews=>{
+
+            //Third query to get cast
+            pool.query(`SELECT * FROM castList WHERE movie_id = ${req.params.id}`)
+            .then(cast=>{
+                
+
+                movie = {...results.rows[0], reviews: [...reviews.rows], cast:[...cast.rows] }
+                res.send(movie);
+            })
+            .catch(error=>next({status:500, message:"Server Error"}));
+        })
+        .catch(error=>next({status:500, message:"Server Error"}));
     })
-    .catch(error=>{
-        next({status:400, message:"Bad request"});
-    });
+    .catch(error=>next({status:400, message:"Bad request"}));
 });
 
 
