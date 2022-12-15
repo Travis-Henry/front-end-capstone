@@ -5,7 +5,7 @@ import Details from "./components/Details";
 import MoreToExplore from "./components/MoreToExplore";
 import Cast from "./components/Cast";
 import Reviews from "./components/Reviews";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const [count, setCount] = useState(0);
 

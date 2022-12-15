@@ -39,3 +39,9 @@
 .read-the-docs {
   color: #888;
 }
+
+#cardGroup {
+  overflow: auto;
+  display: grid;
+  table-layout: auto;
+}
