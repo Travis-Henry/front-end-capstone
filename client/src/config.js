@@ -1,8 +1,8 @@
-// module.exports = {
-//     dev:{
-//         apiString: ''
-//     },
-//     production:{
-//         apiString: ''
-//     }
-// }
+module.exports = {
+    dev:{
+        apiString: 'localhost:3001'
+    },
+    production:{
+        apiString: ''
+    }
+}

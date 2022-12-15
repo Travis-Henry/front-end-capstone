@@ -9,7 +9,7 @@ DROP TABLE IF EXISTS movies;
 CREATE TABLE movies (
   id serial PRIMARY KEY,
   movieName varchar(255),
-  releaseDate date,
+  releaseDate varchar(25),
   studio varchar(255),
   language varchar(255),
   budget numeric,
@@ -31,6 +31,9 @@ CREATE TABLE castList (
 CREATE TABLE reviews (
   review_id serial,
   username varchar(50),
+  title varchar(50),
+  revDate varchar(25),
+  rating int,
   content TEXT,
   movie_id int NOT NULL,
   FOREIGN KEY (movie_id) REFERENCES movies(id)
