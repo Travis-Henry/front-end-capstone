@@ -1,0 +1,24 @@
+.movie-details{
+    background: black;
+    margin: 0px 0px 8px;
+    padding: 16px 0px;
+    color: #E8E6E3DE;
+}
+.details-title{
+    font-size: 32px;
+    text-align: left;
+    border-left: 3px solid yellow;
+}
+.details{
+    text-align: left;
+    padding: 12px 12px 0px 0px;
+    font-size: 16px;
+}
+.strong{
+    color: yellow;
+    margin-right: 5px;
+    
+}
+strong:hover{
+    background-color: yellow;
+}
