@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import React from "react";
 import "./App.css";
 import Primary from "./components/Primary";
 import Details from "./components/Details";
@@ -23,20 +24,23 @@ function App() {
       .catch((error) => console.log(error));
   }, [movieID]);
 
-  const pageData = {
+  const pageContext = {
     setMovieID: setMovieID,
     currentMovie: currentMovie,
   };
 
   return (
-    <div className="App">
-      <Primary />
-      <Details />
-      <MoreToExplore />
-      <Cast />
-      <Reviews />
-    </div>
+    <listContextStates.Provider value={{ ...pageContext }}>
+      <div className="App">
+        <Primary />
+        <Details />
+        <MoreToExplore />
+        <Cast />
+        <Reviews />
+      </div>
+    </listContextStates.Provider>
   );
 }
 
+export const listContextStates = React.createContext();
 export default App;
