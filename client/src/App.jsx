@@ -6,11 +6,14 @@ import MoreToExplore from "./components/MoreToExplore";
 import Cast from "./components/Cast";
 import Reviews from "./components/Reviews";
 import "bootstrap/dist/css/bootstrap.min.css";
+import NavBar from "./components/Navbar";
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
+      <NavBar />
       <Primary />
       <Details />
       <MoreToExplore />
