@@ -22,54 +22,54 @@ function Details(props) {
     </div>
 
 
-/* <section className="section-detail">
-  <div className="div-header">
-    <hgroup>
-      <h3 className="h3-title">
-        <span>Movie Details</span>
-      </h3>
-    </hgroup>
-  </div>
-  <div>
-    <ul>
-      <li>Release Date
-        <div>
-          <ul>
-            <li>Release Info</li>
-          </ul>
-        </div>
-      </li>
-      <li>Studio
-        <div>
-          <ul>
-            <li>Studio Info</li>
-          </ul>
-        </div>
-      </li>
-      <li>Language
-        <div>
-          <ul>
-            <li>Language Info</li>
-          </ul>
-        </div>
-      </li>
-      <li>Budget
-        <div>
-          <ul>
-            <li>Budget Info</li>
-          </ul>
-        </div>
-      </li>
-      <li>Sales
-        <div>
-          <ul>
-            <li>Sales Info</li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>  */
+//  <section className="section-detail">
+//   <div className="div-header">
+//     <hgroup>
+//       <h3 className="h3-title">
+//         <span>Movie Details</span>
+//       </h3>
+//     </hgroup>
+//   </div>
+//   <div>
+//     <ul>
+//       <li>Release Date
+//         <div>
+//           <ul>
+//             <li>Release Info</li>
+//           </ul>
+//         </div>
+//       </li>
+//       <li>Studio
+//         <div>
+//           <ul>
+//             <li>Studio Info</li>
+//           </ul>
+//         </div>
+//       </li>
+//       <li>Language
+//         <div>
+//           <ul>
+//             <li>Language Info</li>
+//           </ul>
+//         </div>
+//       </li>
+//       <li>Budget
+//         <div>
+//           <ul>
+//             <li>Budget Info</li>
+//           </ul>
+//         </div>
+//       </li>
+//       <li>Sales
+//         <div>
+//           <ul>
+//             <li>Sales Info</li>
+//           </ul>
+//         </div>
+//       </li>
+//     </ul>
+//   </div>
+// </section>  
 
   );
 }

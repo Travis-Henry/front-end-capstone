@@ -36,10 +36,10 @@ function App() {
     <listContextStates.Provider value={pageContext}>
       <div className="App">
         <NavBar />
-        <Primary />
+        <Primary currentMovie={currentMovie} />
         <Details details={currentMovie} />
-        <MoreToExplore />
-        <Cast />
+        <MoreToExplore currentMovie={currentMovie}/>
+        <Cast currentMovie={currentMovie} />
         <Reviews />
       </div>
     </listContextStates.Provider>

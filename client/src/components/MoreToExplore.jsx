@@ -5,6 +5,8 @@ import Button from 'react-bootstrap/Button';
 
 
 function MoreToExplore(props) {
+
+  console.log("current movie", props.currentMovie)
   const slides = [1, 2, 3, 4, 5, 6, 7, 8];
 
   const slideLeft = () => {
