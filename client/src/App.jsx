@@ -25,7 +25,7 @@ function App() {
   //Get request for movie data
   useEffect(() => {
     axios
-      .get(`https://imdb-api-ouoz.onrender.com/${movieID}`)
+      .get(`http://localhost:3001/movie/${movieID}`)
       .then((res) => {
         console.log(res.data);
         setCurrentMovie(res.data);
