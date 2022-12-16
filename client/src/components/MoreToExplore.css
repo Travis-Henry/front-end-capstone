@@ -6,8 +6,10 @@
 
     /* margin-left: 250px; */
     max-width: 800px;
-    height: 300px;
+    height: 380px;
     background-color: rgb(251, 249, 249);
+    margin-bottom: 20px;
+    
 }
 #slider {
     width: 100%;
@@ -15,6 +17,9 @@
     white-space: nowrap;
     overflow-x: scroll;
     scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #slider::-webkit-scrollbar {
@@ -46,17 +51,30 @@
 }
 
 .slider-icon:hover {
-    color:rgb(242, 229, 85)
+    color:rgb(212, 197, 25)
 }
 
 .slider-card {
-    width: 180px;
-    height: 270px;
-    background-color: rgb(93, 91, 91);
+
+    min-width: 180px;
+    height: 320px;
+    background-color: rgb(223, 222, 222);
     border-radius: 3%;
+    
     display:inline-block;
-    padding: 10px;
     margin: 10px;
-    box-shadow: 2px 2px 2px 2px;
+    box-shadow: 1px 1px;
 }
 
+.slider-card-image{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    
+    
+}
+
+.button{
+    font-size: medium;
+    color:blue;
+}
