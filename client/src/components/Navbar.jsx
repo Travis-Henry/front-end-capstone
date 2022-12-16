@@ -15,7 +15,7 @@ function NavBar() {
     <Navbar key="lg" bg="dark" variant="dark" expand="lg" className="mb-3">
       <Container>
         <img
-          src="./public/imdbLogo.svg"
+          src="/imdbLogo.svg"
           width="64"
           height="32"
           className="d-inline-block align-top"
