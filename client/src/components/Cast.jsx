@@ -1,13 +1,16 @@
-import { Container, Row } from "react-bootstrap";
+import { CardGroup } from "react-bootstrap";
+import { propTypes } from "react-bootstrap/esm/Image";
 import CastCard from "./CastCard";
 
 function Cast(props) {
+  console.log(props);
+  const cast = props.currentMovie.cast;
+  // console.log(cast);
   return (
-    <Container fluid="lg">
-      <Row id="cardGroup">
-        <CastCard {...props} />
-      </Row>
-    </Container>
+    <CardGroup>
+      {/* <CastCard props={props} /> */}
+      {cast && cast.map((items) => <CastCard items={items} />)}
+    </CardGroup>
   );
 }
 

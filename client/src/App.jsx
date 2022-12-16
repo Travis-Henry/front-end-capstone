@@ -8,6 +8,7 @@ import Cast from "./components/Cast";
 import Reviews from "./components/Reviews";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
+import CastV2 from "./components/castContainer";
 
 import NavBar from "./components/Navbar";
 
@@ -15,6 +16,12 @@ function App() {
   const [movieID, setMovieID] = useState(1);
   const [currentMovie, setCurrentMovie] = useState({});
 
+  let props = {
+    movieID,
+    setMovieID,
+    currentMovie,
+    setCurrentMovie,
+  };
   //Get request for movie data
   useEffect(() => {
     axios
@@ -38,8 +45,14 @@ function App() {
         <NavBar />
         <Primary currentMovie={currentMovie} />
         <Details details={currentMovie} />
+<<<<<<< HEAD
+        <MoreToExplore />
+        <CastV2 currentMovie={currentMovie} />
+        {/* <Cast currentMovie={currentMovie} /> */}
+=======
         <MoreToExplore currentMovie={currentMovie}/>
         <Cast currentMovie={currentMovie} />
+>>>>>>> dev
         <Reviews />
       </div>
     </listContextStates.Provider>

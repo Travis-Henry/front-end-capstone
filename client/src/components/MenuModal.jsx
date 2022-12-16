@@ -36,7 +36,7 @@ function MenuModal() {
         <Modal.Header closeButton>
           <Modal.Title>
             <img
-              src="./public/imdbLogo.svg"
+              src="/imdbLogo.svg"
               width="70"
               height="50"
               className="d-inline-block align-top"
