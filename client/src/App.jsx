@@ -8,7 +8,7 @@ import Cast from "./components/Cast";
 import Reviews from "./components/Reviews";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
-import CastV2 from "./components/castContainer";
+// import CastV2 from "./components/castContainer";
 
 import NavBar from "./components/Navbar";
 
@@ -25,7 +25,7 @@ function App() {
   //Get request for movie data
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/movie/${movieID}`)
+      .get(`https://imdb-api-ouoz.onrender.com/${movieID}`)
       .then((res) => {
         console.log(res.data);
         setCurrentMovie(res.data);
@@ -45,14 +45,8 @@ function App() {
         <NavBar />
         <Primary currentMovie={currentMovie} />
         <Details details={currentMovie} />
-<<<<<<< HEAD
-        <MoreToExplore />
-        <CastV2 currentMovie={currentMovie} />
-        {/* <Cast currentMovie={currentMovie} /> */}
-=======
         <MoreToExplore currentMovie={currentMovie}/>
         <Cast currentMovie={currentMovie} />
->>>>>>> dev
         <Reviews />
       </div>
     </listContextStates.Provider>
