@@ -1,0 +1,100 @@
+.ipc-title--section-title .ipc-title__text {
+  display: flex;
+  max-height: 2.4em;
+  overflow: hidden;
+  border: none;
+  padding-left: 0.75rem;
+  position: relative;
+}
+
+.ipc-title--section-title .ipc-title__text:before {
+  background-color: #f5c518;
+  content: "";
+  margin-left: -0.75rem;
+  position: absolute;
+  height: 100%;
+  width: 4px;
+}
+
+::before {
+  box-sizing: border-box;
+}
+.ipc-title.ipc-title--base {
+color: rgba(0,0,0,.87);
+color: var(--ipt-on-base-textPrimary-color);
+}
+
+.ipc-title {
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+  padding: 0 var(--ipt-pageMargin);
+  width: 100%;
+}
+
+.ipc-title__wrapper {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.ipc-button--center-align-content {
+  justify-content: center;
+}
+
+.ipc-button--default-height {
+  min-height: 2.25rem;
+}
+
+.ipc-button {
+  font-family: var(--ipt-font-family);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: .875rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+  letter-spacing: .08929em;
+  text-decoration: none;
+  text-transform: uppercase;
+  --mdc-ripple-fg-size: 0;
+  --mdc-ripple-left: 0;
+  --mdc-ripple-top: 0;
+  --mdc-ripple-fg-scale: 1;
+  --mdc-ripple-fg-translate-end: 0;
+  --mdc-ripple-fg-translate-start: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  will-change: transform,opacity;
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 64px;
+  height: 36px;
+  border: none;
+  outline: none;
+  line-height: inherit;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  overflow: hidden;
+  vertical-align: middle;
+  border-radius: 4px;
+  padding: 0 16px;
+  border-radius: var(--ipt-cornerRadius);
+  letter-spacing: .02em;
+  min-width: 3rem;
+  max-width: 100%;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ipc-button__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
