@@ -32,11 +32,11 @@ function NavBar() {
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="justify-content-center flex-grow-1 pe-3">
+            <Nav className="justify-content-center flex-grow-1">
               <Nav.Link href="#action2">Link</Nav.Link>
 
+              <MenuModal />
               <InputGroup size="sm" className="d-flex">
-                <MenuModal />
                 <Form.Control
                   size="lg"
                   type="search"
@@ -44,7 +44,9 @@ function NavBar() {
                   className="me-2"
                   aria-label="Search"
                 />
-                <Button variant="outline-warning">Search</Button>
+                <Button size="sm" variant="outline-warning">
+                  Search
+                </Button>
               </InputGroup>
 
               <NavDropdown
