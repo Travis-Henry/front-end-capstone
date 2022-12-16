@@ -38,7 +38,7 @@ function App() {
         <NavBar />
         <Primary currentMovie={currentMovie} />
         <Details details={currentMovie} />
-        <MoreToExplore />
+        <MoreToExplore currentMovie={currentMovie}/>
         <Cast currentMovie={currentMovie} />
         <Reviews />
       </div>
