@@ -15,7 +15,7 @@ function NavBar() {
     <Navbar key="lg" bg="dark" variant="dark" expand="lg" className="mb-3">
       <Container>
         <img
-          src="./public/imdbLogo.svg"
+          src="/imdbLogo.svg"
           width="64"
           height="32"
           className="d-inline-block align-top"
@@ -33,22 +33,16 @@ function NavBar() {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-center flex-grow-1">
-              <Nav.Link href="#action2">Link</Nav.Link>
-
-              <MenuModal />
               <InputGroup size="sm" className="d-flex">
+                <MenuModal />
                 <Form.Control
-                  size="lg"
                   type="search"
                   placeholder="Search"
                   className="me-2"
                   aria-label="Search"
                 />
-                <Button size="sm" variant="outline-warning">
-                  Search
-                </Button>
+                <Button variant="outline-warning">Search</Button>
               </InputGroup>
-
               <NavDropdown
                 title="Lang"
                 id={`offcanvasNavbarDropdown-expand-lg`}
@@ -69,5 +63,5 @@ function NavBar() {
     </Navbar>
   );
 }
-
+console.log(MenuModal);
 export default NavBar;

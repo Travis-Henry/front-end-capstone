@@ -12,9 +12,8 @@ function MenuModal() {
   return (
     <>
       <Button
-        size="sm"
         variant="outline-warning"
-        className="me-2 mb-2 mt-2"
+        className="me-2 mb-2 mt-2 ms-5"
         onClick={() => handleShow()}
       >
         <svg
@@ -36,7 +35,7 @@ function MenuModal() {
         <Modal.Header closeButton>
           <Modal.Title>
             <img
-              src="./public/imdbLogo.svg"
+              src="/imdbLogo.svg"
               width="70"
               height="50"
               className="d-inline-block align-top"
