@@ -1,14 +1,30 @@
 #main-slider-container {
-    width: 100%;
-    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* margin-left: 250px; */
+    max-width: 800px;
+    height: 380px;
     background-color: rgb(251, 249, 249);
+    margin-bottom: 20px;
+    
 }
 #slider {
+    
     width: 100%;
     height: 100%;
     white-space: nowrap;
     overflow-x: scroll;
-    
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider::-webkit-scrollbar {
+    display: none;
 }
 
 #main-slider-container {
@@ -20,11 +36,12 @@
 
 
 .slider-icon.left, .slider-icon.right {
-    background-color: transparent;
+    opacity: 20%;
     border-radius: 6%;
     border:1px solid; 
-    color: rgb(250, 248, 248);
+    color: rgb(251, 250, 250);
     position:absolute;
+    background-color: black;
 }
 
 .slider-icon.left{
@@ -36,17 +53,51 @@
 }
 
 .slider-icon:hover {
-    color:rgb(242, 229, 85)
+    color:rgb(236, 186, 2)
 }
 
 .slider-card {
-    width: 180px;
-    height: 270px;
-    background-color: rgb(93, 91, 91);
+    
+    min-width: 180px;
+    height: 350px;
+    background-color: rgb(223, 222, 222);
     border-radius: 3%;
+    
     display:inline-block;
-    padding: 10px;
     margin: 10px;
-    box-shadow: 2px 2px 2px 2px;
+    box-shadow: 1px 1px;
+   
 }
 
+.slider-card-image{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    
+    
+}
+
+.card-button{
+    font-size: medium;
+    color:blue;
+    width: 90%;
+}
+
+.card-info-div {
+    padding: auto;  
+    position: relative;
+    border-radius: 50%;  
+    width: 30px;
+    margin-top: 5%;
+    margin-left: 75%; 
+    
+        
+}
+.card-button{
+    margin: 1px;
+}
+
+.card-info-div:hover{
+    background-color: rgb(198, 193, 193);
+    
+}
