@@ -1,11 +1,11 @@
 import { Container, Row } from "react-bootstrap";
 import CastCard from "./CastCard";
 
-function Cast() {
+function Cast(props) {
   return (
     <Container fluid="lg">
       <Row id="cardGroup">
-        <CastCard />
+        <CastCard {...props} />
       </Row>
     </Container>
   );
