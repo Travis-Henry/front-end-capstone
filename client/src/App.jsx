@@ -9,6 +9,8 @@ import Reviews from "./components/Reviews";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 
+import NavBar from "./components/Navbar";
+
 function App() {
   const [movieID, setMovieID] = useState(1);
   const [currentMovie, setCurrentMovie] = useState({});
@@ -28,14 +30,14 @@ function App() {
     // setMovieID: setMovieID,
     currentMovie,
     setCurrentMovie,
-
   ];
 
   return (
-    <listContextStates.Provider value={ pageContext }>
+    <listContextStates.Provider value={pageContext}>
       <div className="App">
+        <NavBar />
         <Primary />
-        <Details details={currentMovie}/>
+        <Details details={currentMovie} />
         <MoreToExplore />
         <Cast />
         <Reviews />

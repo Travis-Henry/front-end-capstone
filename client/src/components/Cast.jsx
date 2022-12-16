@@ -1,11 +1,13 @@
-import { CardGroup } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import CastCard from "./CastCard";
 
 function Cast() {
   return (
-    <CardGroup id="cardGroup">
-      <CastCard />
-    </CardGroup>
+    <Container fluid="lg">
+      <Row id="cardGroup">
+        <CastCard />
+      </Row>
+    </Container>
   );
 }
 
