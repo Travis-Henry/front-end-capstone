@@ -1,8 +1,10 @@
 import React from 'react'
 
-export default function Review({...review}) {
+export default function Footers() {
   return (
     <div>
+      
+
       
     </div>
   )

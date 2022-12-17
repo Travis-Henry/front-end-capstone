@@ -5,7 +5,7 @@ import Primary from "./components/Primary";
 import Details from "./components/Details";
 import MoreToExplore from "./components/MoreToExplore";
 import Cast from "./components/Cast";
-import Reviews from "./components/Reviews";
+import Reviews from "./components/reviews/Reviews";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 // import CastV2 from "./components/castContainer";

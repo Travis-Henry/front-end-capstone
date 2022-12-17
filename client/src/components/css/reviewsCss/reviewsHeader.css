@@ -1,0 +1,141 @@
+.reviews-header--container {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.reviews-header {
+  align-content: center;
+  align-items: center;  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.user-reviews--title:before {
+  display: inline-block;
+  background: #f5c518;
+  align-self: flex-start;
+  box-sizing: border-box;
+  content: "";
+  height: 100%;
+  margin-left: -.75rem;
+  position: absolute;
+  width: 4px;
+}
+
+.user-reviews--title {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: .00735em;
+  line-height: 2.5rem;
+  margin-block-end: 1em;
+  margin-block-start: 1em;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  max-height: 2.4em;
+  padding-left: .75rem;
+  position: relative;
+}
+
+.reviews-header--left {
+  background-color: rgba(0,0,0,0);  
+  color: rgba(0,0,0,0.87);
+  cursor: pointer;
+  display: block;
+  text-decoration-color: rgba(0,0,0,0.87);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-transform: none;
+}
+
+.review-count {
+  align-self: center;
+  color: rgba(0,0,0,0.54);
+  cursor: pointer;
+  font-size: .875rem;
+  font-weight: 400;
+  letter-spacing: .01786em;
+  padding-left: .75rem;
+  padding-right: .125rem;
+}
+
+.icon--chevron {
+  align-self: center;
+  color: rgba(0,0,0,0.87);
+  fill: rgba(0,0,0,0.87);
+  flex-shrink: 0;
+  font-size: .8em;
+  font-weight: 500;
+  height: 1em;
+  letter-spacing: .00735em;
+  line-height: 2.5rem;
+  overflow: hidden;
+  width: 1em;
+}
+
+.reviews-header--right {
+  align-items: center;
+  align-self: center;
+  color: rgba(0,0,0,0.87);
+  display: flex;
+  flex-shrink: 0;
+  max-height: 2.4em;
+  vertical-align: baseline;
+}
+
+.add-review-button {
+  appearance: none;
+  background-color: rgba(0,0,0,0);
+  color: rgb(14, 99, 190);
+  display: flex;
+  justify-content: center;
+  letter-spacing: .02em;
+  text-decoration-color: rgb(14, 99, 190);
+  max-width: 100%;
+  min-width: 3rem;
+  position: relative;
+  vertical-align: middle;
+  width: fit-content;
+  will-change: transform, opacity;
+  text-decoration-line: none;
+}
+
+.add-review-button:before {
+  background-color: rgb(14, 99, 190);
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 200%;
+  left: calc(50%-100%);
+  opacity: 0;
+  position: absolute;
+  top: calc(50%-100%);
+  width: 200%;
+  z-index: 1;
+}
+
+.add-review-button:after {
+  content: "";
+  display: block; 
+}
+
+.add-review-icon {
+  margin-left: -6px;
+  margin-right: 4px;
+  opacity: 0.7;
+  overflow: hidden;
+  vertical-align: middle;
+  width: 24;
+  fill:currentColor;
+}
+
+.add-review-button__text {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: none;
+  user-select: none;
+}
