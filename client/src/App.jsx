@@ -5,9 +5,10 @@ import Primary from "./components/Primary";
 import Details from "./components/Details";
 import MoreToExplore from "./components/MoreToExplore";
 import Cast from "./components/Cast";
-import Reviews from "./components/Reviews";
+import Reviews from "./components/reviews/Reviews";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
+// import CastV2 from "./components/castContainer";
 
 import NavBar from "./components/Navbar";
 
@@ -15,16 +16,37 @@ function App() {
   const [movieID, setMovieID] = useState(1);
   const [currentMovie, setCurrentMovie] = useState({});
 
+  const [allMovies, setAllMovies] = useState([]);
+
+  let props = {
+    movieID,
+    setMovieID,
+    currentMovie,
+    setCurrentMovie,
+    allMovies,
+    setAllMovies
+  };
   //Get request for movie data
   useEffect(() => {
     axios
       .get(`http://localhost:3001/movie/${movieID}`)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setCurrentMovie(res.data);
       })
       .catch((error) => console.log(error));
   }, [movieID]);
+
+  //Gets all movies
+  useEffect(() => {
+    axios
+      .get(`http://localhost:3001/movie`)
+      .then((res) => {
+        // console.log(res.data);
+        setAllMovies(res.data);
+      })
+      .catch((error) => console.log(error));
+  }, []);
 
   const pageContext = [
     // setMovieID: setMovieID,
@@ -38,7 +60,7 @@ function App() {
         <NavBar />
         <Primary currentMovie={currentMovie} />
         <Details details={currentMovie} />
-        <MoreToExplore currentMovie={currentMovie}/>
+        <MoreToExplore currentMovie={currentMovie} allMovies={allMovies} />
         <Cast currentMovie={currentMovie} />
         <Reviews />
       </div>

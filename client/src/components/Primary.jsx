@@ -2,7 +2,7 @@ import { Row, Col, Container, Image } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 
 function Primary(props) {
-  console.log(props.currentMovie);
+  // console.log(props.currentMovie);
   return (
     <>
       <Container>

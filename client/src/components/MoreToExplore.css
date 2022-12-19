@@ -1,10 +1,9 @@
 #main-slider-container {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 800px;
-    height: 380px;
+    max-width: 620px;
+    height: 420px;
     background-color: rgb(251, 249, 249);
     margin-bottom: 20px;
     
@@ -19,20 +18,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 1px;
 }
 
 #slider::-webkit-scrollbar {
     display: none;
 }
-
-#main-slider-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    
-}
-
 
 .slider-icon.left, .slider-icon.right {
     opacity: 20%;
@@ -55,30 +46,35 @@
     color:rgb(236, 186, 2)
 }
 
+.bookmark {
+    display: flex;
+    justify-content: flex-start;
+    opacity: 50%;
+    left: 0px;
+    top:0px;
+
+}
+
 .slider-card {
         border: 1px solid rgb(207, 204, 204);
-        min-width: 180px;
-        height: 340px;
+        min-width: 170px;
+        height: 100%;
         background-color: rgb(255, 255, 255);
         border-radius: 3%;
-        display: flex;
-        margin: 5px;
+        display: inline-block;
+        margin-left: 1px;
+        margin-right: 5px;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-content: center;
-        justify-content: center;
-        text-overflow: ellipsis;
-        z-index: 1;
-        box-shadow: rgba(182, 30, 30, 0.2);
-        box-sizing: border-box;
-    
-   
+        justify-content: center;   
 }
 
 .slider-card-image{
     width: 100%;
-    height: 200px;
+    height: 60%;
     background-color: white;
+    margin-top: 0%;
     
     
 }
@@ -129,6 +125,31 @@
 
 .main-text {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
     color: black solid;
+    font-size: 32px;
+    font-weight: 550;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    vertical-align: baseline;
+}
+
+.main-text::before{
+    background: #f5c518;
+    align-self: flex-start;
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    height: 40px;
+    margin-left: -12px;
+    position: absolute;
+    width: 4px;
+}
+
+#main-div {    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap; 
 }

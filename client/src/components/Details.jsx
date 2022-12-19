@@ -8,68 +8,69 @@ import { useState} from 'react';
 function Details(props) {
   const [currentDetails, setCurrentDetails] = useState(listContextStates)
   return (
-    <div>
-        <ListGroup variant="flush" className="movie-details">
-          <ListGroup.Item className="details-title"><strong className="strong">|</strong>Movie Details</ListGroup.Item>
-          <ListGroup.Item className="details">Release Date {props.details.releasedate}</ListGroup.Item>
-          <ListGroup.Item className="details">Studio {props.details.studio}</ListGroup.Item>
-          <ListGroup.Item className="details">Language {props.details.language}</ListGroup.Item>
-          <ListGroup.Item className="details">Budget {props.details.budget}</ListGroup.Item>
-          <ListGroup.Item className="details">Sales {props.details.globalsales}</ListGroup.Item>
-        </ListGroup> 
-     
-    {console.log(props.details)}
-    </div>
-
-
-//  <section className="section-detail">
-//   <div className="div-header">
-//     <hgroup>
-//       <h3 className="h3-title">
-//         <span>Movie Details</span>
-//       </h3>
-//     </hgroup>
-//   </div>
-//   <div>
-//     <ul>
-//       <li>Release Date
-//         <div>
-//           <ul>
-//             <li>Release Info</li>
-//           </ul>
-//         </div>
-//       </li>
-//       <li>Studio
-//         <div>
-//           <ul>
-//             <li>Studio Info</li>
-//           </ul>
-//         </div>
-//       </li>
-//       <li>Language
-//         <div>
-//           <ul>
-//             <li>Language Info</li>
-//           </ul>
-//         </div>
-//       </li>
-//       <li>Budget
-//         <div>
-//           <ul>
-//             <li>Budget Info</li>
-//           </ul>
-//         </div>
-//       </li>
-//       <li>Sales
-//         <div>
-//           <ul>
-//             <li>Sales Info</li>
-//           </ul>
-//         </div>
-//       </li>
-//     </ul>
-//   </div>
-// </section>  
+      <section className="section-detail">
+        <div className="div-header">
+          <hgroup className="hgroup">
+            <h3 className="h3-title">
+              <span className="span">Details</span>
+            </h3>
+          </hgroup>
+        </div>
+        <div className="div-details">
+          <ul className="first-ul">
+            <li className="first-li">
+              <a className="li-detail-name">Release Date</a>
+              <div className="div-results">
+                <ul className="second-ul">
+                  <li className="second-li">
+                  <a className="second-a">{props.details.releasedate}</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className="first-li">
+              <a className="li-detail-name">Studio</a>
+              <div className="div-results">
+                <ul className="second-ul">
+                  <li className="second-li">
+                  <a className="second-a">{props.details.studio}</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className="first-li">
+              <a className="li-detail-name">Language</a>
+              <div className="div-results">
+                <ul className="second-ul">
+                  <li className="second-li">
+                  <a className="second-a">{props.details.language}</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className="first-li">
+              <a className="li-detail-name">Budget</a> 
+              <div className="div-results">
+                <ul className="second-ul">
+                  <li className="second-li">
+                  <a className="second-a">{props.details.budget}</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className="bottom-li">
+              <a className="li-detail-name">Sales</a> 
+              <div className="div-results">
+                <ul className="second-ul">
+                <li className="second-li">
+                  <a className="second-a">{props.details.globalsales}</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>  
 
   );
 }
