@@ -36,6 +36,8 @@ function App() {
       .catch((error) => console.log(error));
   }, [movieID]);
 
+ 
+
   //Gets all movies
   useEffect(() => {
     axios
@@ -43,6 +45,7 @@ function App() {
       .then((res) => {
         console.log(res.data);
         setAllMovies(res.data);
+
       })
       .catch((error) => console.log(error));
   }, []);
@@ -56,13 +59,16 @@ function App() {
   return (
     <listContextStates.Provider value={pageContext}>
       <div className="App">
+    
         <NavBar />
         <Container className="mainContent">
           <Primary currentMovie={currentMovie} />
           <Details details={currentMovie} />
           <MoreToExplore currentMovie={currentMovie} allMovies={allMovies} />
           <Cast currentMovie={currentMovie} />
+        {currentMovie.reviews && (
           <Reviews />
+        )}      
         </Container>
       </div>
     </listContextStates.Provider>
