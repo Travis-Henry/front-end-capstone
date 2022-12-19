@@ -6,19 +6,26 @@ function Primary(props) {
   console.log(props.currentMovie);
   return (
     <>
-      <Container className="primaryCard p-0">
+      <Container className="primaryCard">
         <Row>
-          <Col lg={6}></Col>
-          <Col lg={6}>
+          <Col lg={{ span: 6, offset: 6 }}>
             <Row>
-              <ul>
-                <li>
-                  <a href="">Cast & crew</a>
-                </li>
-                <li>
-                  <a href="">User reviews</a>
-                </li>
-              </ul>
+              <Col>
+                <ul>
+                  <li>
+                    <a href="">Cast & crew</a>
+                  </li>
+                  <li>
+                    <a href="">User reviews</a>
+                  </li>
+                  <li>
+                    <a href="">Trivia</a>
+                  </li>
+                </ul>
+                <div className="d-inline">
+                  <a href="">IMBdPro</a>
+                </div>
+              </Col>
             </Row>
           </Col>
         </Row>
