@@ -9,7 +9,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: black;
 }
+
+.mainContent {
+  background-color: #ffffff;
+  padding: 0;
+}
+
+
 
 .mb-3{
   width: 100%;
