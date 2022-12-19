@@ -1,12 +1,6 @@
-import { Card } from "react-bootstrap";
-import ListGroup from 'react-bootstrap/ListGroup';
 import "./Details.css";
-import { useContext } from 'react';
-import { listContextStates } from "../App";
-import { useState} from 'react';
 
 function Details(props) {
-  const [currentDetails, setCurrentDetails] = useState(listContextStates)
   return (
       <section className="section-detail">
         <div className="div-header">
@@ -27,6 +21,9 @@ function Details(props) {
                   </li>
                 </ul>
               </div>
+              <a className="li-detail-arrow-a">
+                <sgv className="arrow">&gt;</sgv>
+              </a>
             </li>
             <li className="first-li">
               <a className="li-detail-name">Studio</a>
@@ -37,6 +34,9 @@ function Details(props) {
                   </li>
                 </ul>
               </div>
+              <a className="li-detail-arrow-a">
+                <sgv className="arrow">&gt;</sgv>
+              </a>
             </li>
             <li className="first-li">
               <a className="li-detail-name">Language</a>
@@ -47,6 +47,9 @@ function Details(props) {
                   </li>
                 </ul>
               </div>
+              <a className="li-detail-arrow-a">
+                <sgv className="arrow">&gt;</sgv>
+              </a>
             </li>
             <li className="first-li">
               <a className="li-detail-name">Budget</a> 
@@ -57,6 +60,9 @@ function Details(props) {
                   </li>
                 </ul>
               </div>
+              <a className="li-detail-arrow-a">
+                <sgv className="arrow">&gt;</sgv>
+              </a>
             </li>
             <li className="bottom-li">
               <a className="li-detail-name">Sales</a> 
@@ -67,6 +73,9 @@ function Details(props) {
                   </li>
                 </ul>
               </div>
+              <a className="li-detail-arrow-a">
+                <sgv className="arrow">&gt;</sgv>
+              </a>
             </li>
           </ul>
         </div>
