@@ -3,8 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* margin-left: 250px; */
     max-width: 800px;
     height: 380px;
     background-color: rgb(251, 249, 249);
@@ -31,6 +29,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
     
 }
 
@@ -57,15 +56,22 @@
 }
 
 .slider-card {
+        border: 1px solid rgb(207, 204, 204);
+        min-width: 180px;
+        height: 340px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 3%;
+        display: flex;
+        margin: 5px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        text-overflow: ellipsis;
+        z-index: 1;
+        box-shadow: rgba(182, 30, 30, 0.2);
+        box-sizing: border-box;
     
-    min-width: 180px;
-    height: 350px;
-    background-color: rgb(223, 222, 222);
-    border-radius: 3%;
-    
-    display:inline-block;
-    margin: 10px;
-    box-shadow: 1px 1px;
    
 }
 
@@ -89,15 +95,40 @@
     border-radius: 50%;  
     width: 30px;
     margin-top: 5%;
-    margin-left: 75%; 
-    
-        
+    margin-left: 75%;        
 }
-.card-button{
+#card-button{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small solid;
     margin: 1px;
+    background-color: rgb(224, 222, 222);
+    border: rgb(212, 210, 210) solid 1px;
+    color:rgb(5, 106, 208)
+    
 }
 
 .card-info-div:hover{
     background-color: rgb(198, 193, 193);
     
+}
+
+.star{
+    color:rgb(197, 181, 9);
+    fill:rgb(154, 154, 4)
+}
+.star-text{
+    color: gray;
+    fill:gray;
+    font-size: small;
+}
+
+.title{
+    font-size: small;
+    text-overflow: ellipsis;
+}
+
+.main-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: black solid;
 }

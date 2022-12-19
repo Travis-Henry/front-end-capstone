@@ -28,17 +28,23 @@ function MoreToExplore(props) {
   };
 
   return (
+    <div>
+      <div className="main-text">More to explore</div>
+
     <div id="main-slider-container">
       <MdChevronLeft size={50} className="slider-icon left" onClick={slideLeft} />
       <div id="slider">
         {slides.map((slide, index) => {
           return (
+            
+              
+
             <div className="slider-card">
               <img className="slider-card-image" src={slide.image}></img>
               <div></div>
               <Star/>
-              <p>{slide.title}</p>
-              <Button className="card-button" variant="secondary">Watch options</Button>
+              <p className="title">{slide.title}</p>
+              <Button id="card-button">Watch options</Button>
               <div className="card-info-div">
                 <CiCircleInfo size={(25)} className="card-info"/>
               </div>
@@ -48,6 +54,7 @@ function MoreToExplore(props) {
         }
       </div>
       <MdChevronRight size={50} className="slider-icon right" onClick={slideRight} />
+    </div>
     </div>
   );
 }
