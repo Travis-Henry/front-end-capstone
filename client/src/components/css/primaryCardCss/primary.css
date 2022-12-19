@@ -6,7 +6,11 @@
 
 
 
-.primaryCard ul li{
+.primaryCard li{
+    display: inline-flex;
+}
+
+.primaryCard ul{
     display: inline-flex;
 }
 

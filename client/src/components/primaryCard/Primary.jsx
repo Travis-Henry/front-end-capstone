@@ -22,7 +22,7 @@ function Primary(props) {
                     <a href="">Trivia</a>
                   </li>
                 </ul>
-                <div className="d-inline-flex">
+                <div className="d-inline">
                   <a href="">IMBdPro</a>
                 </div>
               </Col>
