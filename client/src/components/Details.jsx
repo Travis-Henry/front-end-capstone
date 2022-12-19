@@ -1,12 +1,6 @@
-import { Card } from "react-bootstrap";
-import ListGroup from 'react-bootstrap/ListGroup';
 import "./Details.css";
-import { useContext } from 'react';
-import { listContextStates } from "../App";
-import { useState} from 'react';
 
 function Details(props) {
-  const [currentDetails, setCurrentDetails] = useState(listContextStates)
   return (
       <section className="section-detail">
         <div className="div-header">
