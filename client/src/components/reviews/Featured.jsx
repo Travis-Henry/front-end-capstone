@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { listContextStates } from '../../App'
 
 export default function Featured() {
+  const [currentMovie] = useContext(listContextStates)
+  const i = Math.floor(Math.random() * 100)
+  console.log(currentMovie)
+  const title = currentMovie.reviews[i].title;
+  const review = currentMovie.reviews[i].content;
+  const sum = currentMovie.reviews.map(r => r.rating).reduce((a, b) => a + b);
+  const avg = sum/currentMovie.reviews.length
+  const usableAvg = parseFloat(avg.toFixed(1))
   return (
     <>
       <div className="featured-review--header">
@@ -8,29 +17,23 @@ export default function Featured() {
           <div className="featured-review--text">
             Featured review
           </div>
-          <span className="star-rating-div">
-            <svg width="24" 
-              height="24" 
-              className="star-icon"
-              viewBox="0 0 24 24">
-              <path d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z"></path>
-            </svg>8*<span className="max-rating">/10</span>
-          </span>
         </div>
+        <span className="star-rating-div">
+          <svg width="24" 
+            height="24" 
+            className="star-icon"
+            viewBox="0 0 24 24">
+            <path d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z"></path>
+          </svg>{usableAvg}<span className="max-rating">/10</span>
+        </span>        
       </div>
       <div className="featured-review--title-main">
-        <span className="featured-review--title">*The Count rides again.</span>
+        <span className="featured-review--title">{title}</span>
       </div>
       <div className="icon-reviews--overflow" role="button">
         <div className="review-summary-div">
           <div className="review-contents-div">
-            *It's important to note that comments in HTML are different 
-            from comments in programming languages like Python or 
-            JavaScript. In these languages, comments are used to add 
-            explanations or notes to the code that are not executed when 
-            the program is run. HTML comments are not executed by the 
-            browser and are only meant to provide information to other 
-            developers working on the code.
+            {review}
           </div>
         </div>
         <button className="ipc-overflowText-overlay"
@@ -50,7 +53,7 @@ export default function Featured() {
       </div>
       <div className="ipc-list-card__actions">
         <div className="review-card-actions">
-          <div className="icp-voting">
+          <div className="ipc-voting">
             <div className="ipc-voting__transition-group">
               <button className="ipc-voting__icon--up" 
                 title="Is helpful"
