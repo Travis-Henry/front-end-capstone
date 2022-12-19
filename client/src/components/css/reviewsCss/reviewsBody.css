@@ -1,6 +1,9 @@
 .user-reviews--container {
   color: black;
   display: block;
+  box-shadow: rgba(0,0,0,0.12);
+  filter: drop-shadow(rgba(0,0,0,0.3));
+  z-index: 1;
 }
 
 .user-review--content {
