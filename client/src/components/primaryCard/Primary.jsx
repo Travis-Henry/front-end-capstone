@@ -1,11 +1,27 @@
 import { Row, Col, Container, Image } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
+import "../css/primaryCardCss/primary.css";
 
 function Primary(props) {
   console.log(props.currentMovie);
   return (
     <>
-      <Container>
+      <Container className="primaryCard p-0">
+        <Row>
+          <Col lg={6}></Col>
+          <Col lg={6}>
+            <Row>
+              <ul>
+                <li>
+                  <a href="">Cast & crew</a>
+                </li>
+                <li>
+                  <a href="">User reviews</a>
+                </li>
+              </ul>
+            </Row>
+          </Col>
+        </Row>
         <Row>
           <h1>{props.currentMovie.moviename}</h1>
         </Row>
