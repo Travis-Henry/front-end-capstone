@@ -16,6 +16,8 @@ function App() {
   const [movieID, setMovieID] = useState(1);
   const [currentMovie, setCurrentMovie] = useState({});
 
+  const [allMovies, setAllMovies] = useState({});
+
   let props = {
     movieID,
     setMovieID,
@@ -33,6 +35,17 @@ function App() {
       .catch((error) => console.log(error));
   }, [movieID]);
 
+  //Gets all movies
+  useEffect(() => {
+    axios
+      .get(`http://localhost:3001/movie`)
+      .then((res) => {
+        console.log(res.data);
+        setAllMovies(res.data);
+      })
+      .catch((error) => console.log(error));
+  }, []);
+
   const pageContext = [
     // setMovieID: setMovieID,
     currentMovie,
@@ -45,7 +58,7 @@ function App() {
         <NavBar />
         <Primary currentMovie={currentMovie} />
         <Details details={currentMovie} />
-        <MoreToExplore currentMovie={currentMovie}/>
+        <MoreToExplore currentMovie={currentMovie} allMovies={allMovies} />
         <Cast currentMovie={currentMovie} />
         <Reviews />
       </div>
