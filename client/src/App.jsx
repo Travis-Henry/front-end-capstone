@@ -66,7 +66,9 @@ function App() {
           <Details details={currentMovie} />
           <MoreToExplore currentMovie={currentMovie} allMovies={allMovies} />
           <Cast currentMovie={currentMovie} />
+        {currentMovie.reviews && (
           <Reviews />
+        )}      
         </Container>
       </div>
     </listContextStates.Provider>
