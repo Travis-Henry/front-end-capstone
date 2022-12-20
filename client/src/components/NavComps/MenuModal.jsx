@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
+import './Nav.css';
 
 function MenuModal() {
   const [fullscreen, setFullscreen] = useState(true);
@@ -12,15 +13,16 @@ function MenuModal() {
   return (
     <>
       <Button
+        id="menuButton"
         size="sm"
-        variant="outline-warning"
+        // variant="outline-warning"
         className="me-2 mb-2 mt-2"
         onClick={() => handleShow()}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
+          width="24"
+          height="24"
           fill="currentColor"
           class="bi bi-list"
           viewBox="0 0 16 16"
