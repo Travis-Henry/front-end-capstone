@@ -83,7 +83,7 @@ button svg {
     height: 24px;
 }
 
-svg path {
+.primaryCard path {
     fill: white;
 }
 
