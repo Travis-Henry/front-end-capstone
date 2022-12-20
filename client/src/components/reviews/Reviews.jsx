@@ -1,7 +1,7 @@
-import React from 'react'
-import ReviewsHeader from './ReviewsHeader'
-import ReviewsBody from './ReviewsBody'
-import '../css/reviewsCss/reviewsSectionContainer.css'
+import React from "react";
+import ReviewsHeader from "./ReviewsHeader";
+import ReviewsBody from "./ReviewsBody";
+import "./reviewsCss/reviewsHeader.css";
 
 export default function Reviews() {
   return (
@@ -12,5 +12,5 @@ export default function Reviews() {
       </>
       <div className="add-space"></div>
     </section>
-  )
+  );
 }
