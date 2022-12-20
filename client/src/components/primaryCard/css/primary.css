@@ -2,10 +2,13 @@
     background-color: #1f1f1f;
     margin: 0;
     color: white;
+    
 }
 
 .primaryCard ul{
     display: inline-flex;
+    padding-left: 0;
+    margin-left: auto;
 }
 
 .primaryCard li {
@@ -92,4 +95,12 @@ svg path {
 .primaryCard a:hover {
     color: white;
     text-decoration: underline;
+}
+
+.primary-details {
+    border: top 1px;
+}
+
+.shareBtn {
+    display: inline-flex;
 }
