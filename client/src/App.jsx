@@ -18,6 +18,7 @@ function App() {
 
   const [allMovies, setAllMovies] = useState([]);
 
+
   let props = {
     movieID,
     setMovieID,
@@ -42,7 +43,6 @@ function App() {
     axios
       .get(`http://localhost:3001/movie`)
       .then((res) => {
-        // console.log(res.data);
         setAllMovies(res.data);
       })
       .catch((error) => console.log(error));

@@ -7,18 +7,16 @@ function CastCard(props) {
     <>
       <Col md={6}>
         <Row>
-          <Col md={3} className="mb-3">
+          <Col className="mb-3">
             <Image
               roundedCircle="true"
               src={props.items.photo || "/blankProPic2.svg"}
-              style={{ width: "125px", height: "125px" }}
+              style={{ width: "96px", height: "96px" }}
             />
           </Col>
-          <Col>
-            <div>
-              <h2>{props.items.name}</h2>
-              <p>{props.items.character}</p>
-            </div>
+          <Col md={8}>
+            <h3>{props.items.name}</h3>
+            <p>{props.items.character}</p>
           </Col>
         </Row>
       </Col>
