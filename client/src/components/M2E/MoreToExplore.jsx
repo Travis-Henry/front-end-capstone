@@ -26,8 +26,8 @@ function MoreToExplore(props) {
         <div id="main-div">
           <div className="main-text">More to explore</div>
 
-          <MdChevronLeft size={50} className="slider-icon left" onClick={slideLeft}/>
           <div id="main-slider-container">
+            <MdChevronLeft size={50} className="slider-icon left" onClick={slideLeft} />
             <div id="slider">
               {props.allMovies.map((movie) => {
                 return (
@@ -47,8 +47,8 @@ function MoreToExplore(props) {
               })
               }
             </div>
+            <MdChevronRight size={50} className="slider-icon right" onClick={slideRight} />
           </div>
-          <MdChevronRight size={50} className="slider-icon right" onClick={slideRight} />
         </div>
       </Col>
 

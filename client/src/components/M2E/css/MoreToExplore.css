@@ -1,10 +1,13 @@
 #main-slider-container {
+    max-width: 880px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 420px;
     background-color: rgb(0, 0, 0);
     margin-bottom: 20px;
+    padding: 0 0 0 0;
+    position: relative;
     
 }
 #slider {
@@ -15,9 +18,12 @@
     overflow-x: scroll;
     scroll-behavior: smooth;
     display: flex;
+    /* box-sizing: border-box; */
     justify-content: center;
     align-items: center;
-    padding-left: 1px;
+    position:relative;
+    /* padding-left: 1px; */
+
 }
 
 #slider::-webkit-scrollbar {
@@ -25,12 +31,13 @@
 }
 
 .slider-icon.left, .slider-icon.right {
-    opacity: 20%;
+    opacity: 80%;
     border-radius: 6%;
-    border:1px solid; 
-    color: rgb(251, 250, 250);
-    position:absolute;
+    border:1px solid white; 
+    color: rgb(255, 255, 255);
+    position: absolute;
     background-color: black;
+    z-index: 1;
 }
 
 .slider-icon.left{
@@ -42,16 +49,16 @@
 }
 
 .slider-icon:hover {
-    color:rgb(236, 186, 2)
+    color:rgb(254, 199, 0)
 }
 
 .bookmark {
     display: flex;
     justify-content: flex-start;
-    opacity: 50%;
+    opacity: 80%;
     left: 0px;
     top:0px;
-    color: white;
+    color: rgb(246, 245, 245);
     position: absolute;
 
 }
@@ -80,6 +87,7 @@
     height: 60%;
     background-color: white;
     top: 0px;  
+    
 }
 
 .card-button{
@@ -140,6 +148,7 @@
 }
 
 .main-text::before{
+    display: flex;
     background: #f5c518;
     align-self: flex-start;
     box-sizing: border-box;
@@ -151,13 +160,15 @@
     width: 4px;
 }
 
-#main-div {    
+#main-div {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    flex-wrap: nowrap; 
+    flex-wrap: wrap;
     background-color: black;
     padding-top: 40px;
     padding-bottom: 40px;
+    position: relative;
+    align-content: center;
 }
