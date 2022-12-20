@@ -11,8 +11,6 @@ import { BsFillBookmarkCheckFill } from "react-icons/bs";
 
 function MoreToExplore(props) {
 
-  //console.log("all movies", props.allMovies)
-  // console.log("current movie", props.currentMovie)
   const slideLeft = () => {
     var slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft - 500;
@@ -30,14 +28,13 @@ function MoreToExplore(props) {
         <div id="main-div">
           <div className="main-text">More to explore</div>
 
-          <MdChevronLeft size={50} className="slider-icon left" />
+          <MdChevronLeft size={50} className="slider-icon left" onClick={slideRight}/>
           <div id="main-slider-container">
             <div id="slider">
               {props.allMovies.map((movie) => {
-                // console.log('MYYYY movie', movie)
                 return (
                   <div className="slider-card">
-                    <BsFillBookmarkPlusFill size={30} className="bookmark" onClick={handleClick} />
+                    <BsFillBookmarkPlusFill size={30} className="bookmark" />
                     <img className="slider-card-image" src={movie.poster} />
                     <div>
                       <Star />
