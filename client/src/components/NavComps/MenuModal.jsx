@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Button, Modal, Container, Row, Col } from "react-bootstrap";
 import "./Nav.css";
 
 function MenuModal() {
@@ -13,15 +13,16 @@ function MenuModal() {
   return (
     <>
       <Button
+        id="menuButton"
         size="sm"
-        variant="outline-warning"
+        // variant="outline-warning"
         className="me-2 mb-2 mt-2"
         onClick={() => handleShow()}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
+          width="24"
+          height="24"
           fill="currentColor"
           class="bi bi-list"
           viewBox="0 0 16 16"
@@ -34,7 +35,7 @@ function MenuModal() {
         Menu
       </Button>
       <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
-        <Modal.Header closeButton>
+        <Modal.Header closeButton closeVariant="white" id="modal-header">
           <Modal.Title>
             <img
               src="/imdbLogo.svg"
@@ -44,7 +45,23 @@ function MenuModal() {
             />
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>Modal body content</Modal.Body>
+        <Modal.Body id="modal-body">
+          <Container>
+            <Row>
+              <Col>
+                <h3>Trending</h3>
+                <div>
+                  <ul id="trending-list">
+                    <a href="#">
+                      <span>Best of 2022</span>
+                    </a>
+                  </ul>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+          Modal body content
+        </Modal.Body>
       </Modal>
     </>
   );
