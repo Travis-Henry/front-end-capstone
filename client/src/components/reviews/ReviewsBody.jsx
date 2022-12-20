@@ -1,7 +1,7 @@
-import React from 'react'
-import Featured from './Featured'
-import Footers from './Footers'
-import '../css/reviewsCss/reviewsBody.css'
+import React from "react";
+import Featured from "./Featured";
+import Footers from "./Footers";
+import "./reviewsCss/reviewsBody.css";
 
 export default function ReviewsBody() {
   return (
@@ -13,5 +13,5 @@ export default function ReviewsBody() {
         <Footers />
       </div>
     </div>
-  )
+  );
 }

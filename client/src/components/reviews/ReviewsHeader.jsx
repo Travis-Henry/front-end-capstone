@@ -1,7 +1,7 @@
-import React from 'react'
-import HeaderLeft from './HeaderLeft'
-import HeaderRight from './HeaderRight'
-import '../css/reviewsCss/reviewsHeader.css'
+import React from "react";
+import HeaderLeft from "./HeaderLeft";
+import HeaderRight from "./HeaderRight";
+import "./reviewsCss/reviewsHeader.css";
 
 export default function ReviewsHeader() {
   return (
@@ -11,5 +11,5 @@ export default function ReviewsHeader() {
         <HeaderRight />
       </div>
     </div>
-  )
+  );
 }

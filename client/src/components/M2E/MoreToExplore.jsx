@@ -1,16 +1,14 @@
-import "./MoreToExplore.css";
+import "./css/MoreToExplore.css";
 import { MdChevronRight, MdChevronLeft } from "react-icons/md";
 import Star from "./Star";
 import { CiCircleInfo } from "react-icons/ci";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 import { BsFillBookmarkPlusFill } from "react-icons/bs";
 import { Row, Col, Container, Image } from "react-bootstrap";
 import { BsFillBookmarkCheckFill } from "react-icons/bs";
 
 
-
 function MoreToExplore(props) {
-
   const slideLeft = () => {
     var slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft - 500;
@@ -28,7 +26,7 @@ function MoreToExplore(props) {
         <div id="main-div">
           <div className="main-text">More to explore</div>
 
-          <MdChevronLeft size={50} className="slider-icon left" onClick={slideRight}/>
+          <MdChevronLeft size={50} className="slider-icon left" onClick={slideLeft}/>
           <div id="main-slider-container">
             <div id="slider">
               {props.allMovies.map((movie) => {
@@ -60,4 +58,3 @@ function MoreToExplore(props) {
 }
 
 export default MoreToExplore;
-

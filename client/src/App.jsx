@@ -1,16 +1,15 @@
 import { useState, useEffect, createContext } from "react";
 import React from "react";
 import Primary from "./components/primaryCard/Primary";
-import Details from "./components/Details";
-import MoreToExplore from "./components/MoreToExplore";
-import Cast from "./components/Cast";
+import Details from "./components/DetailsComp/Details";
+import MoreToExplore from "./components/M2E/MoreToExplore";
+import Cast from "./components/CastComps/Cast";
 import Reviews from "./components/reviews/Reviews";
+import NavBar from "./components/NavComps/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import axios from "axios";
-// import CastV2 from "./components/castContainer";
 
-import NavBar from "./components/Navbar";
 import { Container } from "react-bootstrap";
 
 function App() {
@@ -26,21 +25,18 @@ function App() {
     currentMovie,
     setCurrentMovie,
     allMovies,
-    setAllMovies
+    setAllMovies,
   };
   //Get request for movie data
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/movie/${movieID}`)
+      .get(`https://imdb-api-ouoz.onrender.com/movie/${movieID}`)
       .then((res) => {
         // console.log(res.data);
         setCurrentMovie(res.data);
       })
       .catch((error) => console.log(error));
   }, [movieID]);
-
-
- 
 
   //Gets all movies
   useEffect(() => {
@@ -61,16 +57,13 @@ function App() {
   return (
     <listContextStates.Provider value={pageContext}>
       <div className="App">
-    
         <NavBar />
         <Container className="mainContent">
           <Primary currentMovie={currentMovie} />
           <Details details={currentMovie} />
           <MoreToExplore currentMovie={currentMovie} allMovies={allMovies} />
           <Cast currentMovie={currentMovie} />
-        {currentMovie.reviews && (
-          <Reviews />
-        )}      
+          {currentMovie.reviews && <Reviews />}
         </Container>
       </div>
     </listContextStates.Provider>
