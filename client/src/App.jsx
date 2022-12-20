@@ -3,7 +3,7 @@ import React from "react";
 import Primary from "./components/primaryCard/Primary";
 import Details from "./components/Details";
 import MoreToExplore from "./components/MoreToExplore";
-import Cast from "./components/Cast";
+import Cast from "./components/CastComps/Cast";
 import Reviews from "./components/reviews/Reviews";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";

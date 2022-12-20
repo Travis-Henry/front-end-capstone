@@ -1,9 +1,7 @@
 import { Row, Col, Image } from "react-bootstrap";
 
 function CastCard(props) {
-  // let cast = props.currentMovie.cast;
   console.log(props);
-  // console.log(cast);
 
   return (
     <>
@@ -29,24 +27,3 @@ function CastCard(props) {
 }
 
 export default CastCard;
-
-// return (
-//   <>
-//     <Card
-//       text="white"
-//       bg="secondary"
-//       border="warning"
-//       style={{ width: "227px", height: "16rem" }}
-//     >
-//       <Card.Img
-//         variant="top"
-//         src={props.items.photo || "/blankProPic2.svg"}
-//         style={{ width: "225px", height: "150px" }}
-//       />
-//       <Card.Body>
-//         <Card.Title>{props.items.name}</Card.Title>
-//         <Card.Text>{props.items.character}</Card.Text>
-//       </Card.Body>
-//     </Card>
-//   </>
-// );
