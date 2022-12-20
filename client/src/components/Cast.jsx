@@ -3,7 +3,7 @@ import { propTypes } from "react-bootstrap/esm/Image";
 import CastCard from "./CastCard";
 
 function Cast(props) {
-  console.log(props);
+  // console.log(props);
   const cast = props.currentMovie.cast;
   // console.log(cast);
   return (

@@ -1,14 +1,16 @@
-/* #cardGroup {
-  overflow: auto;
-  display: grid;
-  table-layout: auto;
-} */
-
+body {
+  background-color: black;
+}
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; 
+}
+
+.mainContent {
+  background-color: #ffffff;
+  padding: 0;
 }
 
 .mb-3{

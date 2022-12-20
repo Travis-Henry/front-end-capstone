@@ -1,11 +1,34 @@
 import { Row, Col, Container, Image } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
+import "../css/primaryCardCss/primary.css";
 
 function Primary(props) {
-  console.log(props.currentMovie);
+  // console.log(props.currentMovie);
   return (
     <>
-      <Container>
+      <Container className="primaryCard">
+        <Row>
+          <Col lg={{ span: 6, offset: 6 }}>
+            <Row>
+              <Col>
+                <ul>
+                  <li>
+                    <a href="">Cast & crew</a>
+                  </li>
+                  <li>
+                    <a href="">User reviews</a>
+                  </li>
+                  <li>
+                    <a href="">Trivia</a>
+                  </li>
+                </ul>
+                <div className="d-inline">
+                  <a href="">IMBdPro</a>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
         <Row>
           <h1>{props.currentMovie.moviename}</h1>
         </Row>
