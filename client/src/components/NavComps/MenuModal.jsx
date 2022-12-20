@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Button, Modal } from "react-bootstrap";
-import './Nav.css';
+import { Button, Modal, Container, Row, Col } from "react-bootstrap";
+import "./Nav.css";
 
 function MenuModal() {
   const [fullscreen, setFullscreen] = useState(true);
@@ -35,7 +35,7 @@ function MenuModal() {
         Menu
       </Button>
       <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
-        <Modal.Header closeButton>
+        <Modal.Header closeButton closeVariant="white" id="modal-header">
           <Modal.Title>
             <img
               src="/imdbLogo.svg"
@@ -45,7 +45,23 @@ function MenuModal() {
             />
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>Modal body content</Modal.Body>
+        <Modal.Body id="modal-body">
+          <Container>
+            <Row>
+              <Col>
+                <h3>Trending</h3>
+                <div>
+                  <ul id="trending-list">
+                    <a href="#">
+                      <span>Best of 2022</span>
+                    </a>
+                  </ul>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+          Modal body content
+        </Modal.Body>
       </Modal>
     </>
   );

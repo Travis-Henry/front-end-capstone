@@ -1,4 +1,5 @@
 import { Row, Col, Image } from "react-bootstrap";
+import "./css/Cast.css";
 
 function CastCard(props) {
   console.log(props);
@@ -6,11 +7,11 @@ function CastCard(props) {
   return (
     <>
       <Col md={6}>
-        <Row>
-          <Col className="mb-3">
+        <Row md={2}>
+          <Col id="castImgCol" className="ms-2 mb-3 px-0">
             <Image
               roundedCircle="true"
-              src={props.items.photo || "/blankProPic2.svg"}
+              src={props.items.photo || "/blankActor.svg"}
               style={{ width: "96px", height: "96px" }}
             />
           </Col>
