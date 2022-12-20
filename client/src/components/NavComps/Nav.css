@@ -9,7 +9,6 @@
     justify-content: space-between;
     letter-spacing: .5px;
     line-height: 24px;
-    max-width: 1024px;
     text-size-adjust: 100%;
 }
 #navTopTotal{
@@ -25,9 +24,15 @@
     background-color: rgb(33, 37, 41);
     border-color: rgb(33, 37, 41);
     padding-top: 6px;
+/*new css for menuButton*/
+    margin-left: 8px;
 }
 #menuButton:hover{
-    background-color:rgb(75, 78, 81)
+    background-color:rgb(75, 78, 81);
+}
+.d-flex{
+    margin-left: 8px;
+    margin-right: 8px;
 }
 #searchBar{
     border-width: 1px;
@@ -41,17 +46,46 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+#IMBdPro{
+    justify-content: center;
+    background-color: rgb(33, 37, 41);
+    border-color: rgb(33, 37, 41);
+    letter-spacing: .28px;
+    line-height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+    position: relative;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-wrap: nowrap; 
 
-#modal-body {
-    background-color: #1f1f1f;
-    color: white;
 }
-
-#modal-header {
-    background-color: #1f1f1f;
-    border-color: #1f1f1f;
+#IMBdPro:hover{
+    background-color:rgb(75, 78, 81);
 }
+#svgTotal{
+    box-sizing: border-box;
+    height: 14px;
+    width: 52px;
+    color: aliceblue;
+}
+.divider{
+    box-sizing: border-box;
+    border: 1px solid #383838;
+    margin-top: 12px;
+    
+    width: 1px;
+    height: 2rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+ 
 
-.btn-close {
-    color: #f5c518;
 }
