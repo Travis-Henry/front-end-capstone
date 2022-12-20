@@ -1,11 +1,15 @@
+
+
 body {
   background-color: black;
+
 }
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; 
+
 }
 
 .mainContent {

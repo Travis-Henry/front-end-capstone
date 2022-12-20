@@ -1,7 +1,7 @@
 import React from "react";
 import ReviewsHeader from "./ReviewsHeader";
 import ReviewsBody from "./ReviewsBody";
-import "./reviewsCss/reviewsHeader.css";
+import "./reviewsCss/reviewsSectionContainer.css";
 
 export default function Reviews() {
   return (
