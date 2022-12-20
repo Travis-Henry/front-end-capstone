@@ -9,6 +9,7 @@ import {
   InputGroup,
 } from "react-bootstrap";
 import MenuModal from "./MenuModal";
+import "./Nav.css";
 
 function NavBar() {
   return (

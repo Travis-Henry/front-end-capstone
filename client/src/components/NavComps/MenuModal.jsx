@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
+import "./Nav.css";
 
 function MenuModal() {
   const [fullscreen, setFullscreen] = useState(true);
