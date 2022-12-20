@@ -3,7 +3,7 @@ import { Container, Row } from "react-bootstrap";
 import CastCard from "./CastCard";
 
 function Cast(props) {
-  console.log(props);
+  // console.log(props);
   const cast = props.currentMovie.cast;
   // console.log(cast);
   return (

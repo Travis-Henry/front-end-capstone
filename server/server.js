@@ -41,6 +41,16 @@ app.get('/movie/:id', (req, res, next)=>{
     .catch(error=>next({status:400, message:"Bad request"}));
 });
 
+//Get all movies
+app.get('/movie', (req, res, next)=>{
+
+    pool.query(`SELECT * FROM movies`)
+    .then(results=>{
+        res.send(results.rows); 
+    })
+    .catch(error=>next({status:400, message:"Bad request"}));
+});
+
 
 //Error handler
 app.use((err, req, res, next)=>{

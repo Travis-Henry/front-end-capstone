@@ -1,1 +1,4 @@
 GET http://localhost:3001/movie/1
+
+###
+GET http://localhost:3001/movie

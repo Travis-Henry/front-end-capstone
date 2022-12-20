@@ -1,0 +1,14 @@
+.reviews-section--container {
+  box-sizing: border-box;
+  color: black;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2em;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: .03125em;
+  line-height: 1.5rem;
+  text-size-adjust: 100%;
+}
