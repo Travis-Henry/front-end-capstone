@@ -41,3 +41,17 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+#modal-body {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+#modal-header {
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+}
+
+.btn-close {
+    color: #f5c518;
+}
