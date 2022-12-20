@@ -1,4 +1,4 @@
-import { Card, Col } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
 
 function CastCard(props) {
   // let cast = props.currentMovie.cast;
@@ -7,22 +7,23 @@ function CastCard(props) {
 
   return (
     <>
-      <Card
-        text="white"
-        bg="secondary"
-        border="warning"
-        style={{ width: "227px", height: "16rem" }}
-      >
-        <Card.Img
-          variant="top"
-          src={props.items.photo || "/blankProPic2.svg"}
-          style={{ width: "225px", height: "150px" }}
-        />
-        <Card.Body>
-          <Card.Title>{props.items.name}</Card.Title>
-          <Card.Text>{props.items.character}</Card.Text>
-        </Card.Body>
-      </Card>
+      <Col md={6}>
+        <Row>
+          <Col md={3} className="mb-3">
+            <Image
+              roundedCircle="true"
+              src={props.items.photo || "/blankProPic2.svg"}
+              style={{ width: "125px", height: "125px" }}
+            />
+          </Col>
+          <Col>
+            <div>
+              <h2>{props.items.name}</h2>
+              <p>{props.items.character}</p>
+            </div>
+          </Col>
+        </Row>
+      </Col>
     </>
   );
 }
@@ -30,26 +31,22 @@ function CastCard(props) {
 export default CastCard;
 
 // return (
-//
-//     {props.currentMovie.map((items) => (
-//       <Col>
-//         <Card
-//           text="white"
-//           bg="secondary"
-//           border="warning"
-//           style={{ width: "227px", height: "16rem" }}
-//         >
-//           <Card.Img
-//             variant="top"
-//             src="https://picsum.photos/200/300"
-//             style={{ width: "225px", height: "150px" }}
-//           />
-//           <Card.Body>
-//             <Card.Title>{items.name}</Card.Title>
-//             <Card.Text>{items.character}</Card.Text>
-//           </Card.Body>
-//         </Card>
-//       </Col>
-//     ))}
+//   <>
+//     <Card
+//       text="white"
+//       bg="secondary"
+//       border="warning"
+//       style={{ width: "227px", height: "16rem" }}
+//     >
+//       <Card.Img
+//         variant="top"
+//         src={props.items.photo || "/blankProPic2.svg"}
+//         style={{ width: "225px", height: "150px" }}
+//       />
+//       <Card.Body>
+//         <Card.Title>{props.items.name}</Card.Title>
+//         <Card.Text>{props.items.character}</Card.Text>
+//       </Card.Body>
+//     </Card>
 //   </>
 // );
