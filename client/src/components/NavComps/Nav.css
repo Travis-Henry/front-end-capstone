@@ -13,10 +13,6 @@
     text-size-adjust: 100%;
 }
 #navTopTotal{
-<<<<<<< HEAD
-    /* justify-content: space-between; */
-=======
->>>>>>> dev
     text-size-adjust: 100%;
     padding-left: 12px;
     padding-right: 12px;
@@ -26,10 +22,6 @@
     flex-direction: row;
     flex-shrink: 0;
     flex-wrap: nowrap;
-<<<<<<< HEAD
-    /* color: rgb(255, 255, 255); */
-=======
->>>>>>> dev
     background-color: rgb(33, 37, 41);
     border-color: rgb(33, 37, 41);
     padding-top: 6px;
