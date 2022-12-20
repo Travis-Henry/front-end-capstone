@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import "../css/primaryCardCss/primary.css";
 
 function Primary(props) {
-  console.log(props.currentMovie);
+  // console.log(props.currentMovie);
   return (
     <>
       <Container className="primaryCard">

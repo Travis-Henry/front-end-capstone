@@ -17,20 +17,22 @@ function App() {
   const [movieID, setMovieID] = useState(1);
   const [currentMovie, setCurrentMovie] = useState({});
 
-  const [allMovies, setAllMovies] = useState({});
+  const [allMovies, setAllMovies] = useState([]);
 
   let props = {
     movieID,
     setMovieID,
     currentMovie,
     setCurrentMovie,
+    allMovies,
+    setAllMovies
   };
   //Get request for movie data
   useEffect(() => {
     axios
       .get(`http://localhost:3001/movie/${movieID}`)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setCurrentMovie(res.data);
       })
       .catch((error) => console.log(error));
@@ -43,7 +45,7 @@ function App() {
     axios
       .get(`http://localhost:3001/movie`)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setAllMovies(res.data);
 
       })
