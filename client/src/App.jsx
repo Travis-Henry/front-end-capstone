@@ -1,16 +1,15 @@
 import { useState, useEffect, createContext } from "react";
 import React from "react";
 import Primary from "./components/primaryCard/Primary";
-import Details from "./components/Details";
-import MoreToExplore from "./components/MoreToExplore";
+import Details from "./components/DetailsComp/Details";
+import MoreToExplore from "./components/M2E/MoreToExplore";
 import Cast from "./components/CastComps/Cast";
 import Reviews from "./components/reviews/Reviews";
+import NavBar from "./components/NavComps/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import axios from "axios";
-// import CastV2 from "./components/castContainer";
 
-import NavBar from "./components/Navbar";
 import { Container } from "react-bootstrap";
 
 function App() {

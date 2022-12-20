@@ -1,13 +1,11 @@
-import "./MoreToExplore.css";
+import "./css/MoreToExplore.css";
 import { MdChevronRight, MdChevronLeft } from "react-icons/md";
 import Star from "./Star";
 import { CiCircleInfo } from "react-icons/ci";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 import { BsFillBookmarkPlusFill } from "react-icons/bs";
 
-
 function MoreToExplore(props) {
-
   //console.log("all movies", props.allMovies)
   // console.log("current movie", props.currentMovie)
   const slideLeft = () => {
@@ -24,7 +22,11 @@ function MoreToExplore(props) {
     <div id="main-div">
       <div className="main-text">More to explore</div>
 
-      <MdChevronLeft size={50} className="slider-icon left" onClick={slideLeft} />
+      <MdChevronLeft
+        size={50}
+        className="slider-icon left"
+        onClick={slideLeft}
+      />
       <div id="main-slider-container">
         <div id="slider">
           {props.allMovies.map((movie) => {
@@ -40,18 +42,20 @@ function MoreToExplore(props) {
                 <p className="title">{movie.moviename}</p>
                 <Button id="card-button">Watch options</Button>
                 <div className="card-info-div">
-                  <CiCircleInfo size={(25)} className="card-info" />
+                  <CiCircleInfo size={25} className="card-info" />
                 </div>
               </div>
-            )
-          })
-          }
+            );
+          })}
         </div>
       </div>
-      <MdChevronRight size={50} className="slider-icon right" onClick={slideRight} />
+      <MdChevronRight
+        size={50}
+        className="slider-icon right"
+        onClick={slideRight}
+      />
     </div>
   );
 }
 
 export default MoreToExplore;
-

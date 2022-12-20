@@ -1,5 +1,5 @@
 import { Container, Row } from "react-bootstrap";
-// import { propTypes } from "react-bootstrap/esm/Image";
+import "./css/Cast.css";
 import CastCard from "./CastCard";
 
 function Cast(props) {
