@@ -17,18 +17,3 @@ body {
   width: 100%;
 }
 
-#iconContext-chevron-right-inline {
-  margin-left: 12px;
-}
-
-#castHeading::before {
-  background: #f5c518;
-  background: var(--ipt-accent1-bg);
-  border-radius: var(--ipt-cornerRadius);
-  content: "";
-  margin-left: -0.75rem;
-  align-self: flex-start;
-  position: absolute;
-  height: 100%;
-  width: 4px;
-}

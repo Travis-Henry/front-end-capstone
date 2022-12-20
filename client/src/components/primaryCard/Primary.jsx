@@ -1,6 +1,6 @@
 import { Row, Col, Container, Image } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
-import "../css/primaryCardCss/primary.css";
+import "./css/primary.css";
 
 function Primary(props) {
   // console.log(props.currentMovie);
