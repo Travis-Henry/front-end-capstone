@@ -1,15 +1,16 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import "./css/StarRating.css";
 
 export default function StarRating(props) {
   return (
     <>
-      <Row>
-        <Col className="mx-auto">
-          <span>IMBd RATING</span>
+      <Row className="starRating">
+        <Col>
+          <span className="">IMBd RATING</span>
         </Col>
       </Row>
-      <Row>
+      <Row className="starRating">
         <button>
           <Row>
             <Col>
