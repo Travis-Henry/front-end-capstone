@@ -2,10 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 620px;
+    /* max-width: 620px; */
     height: 420px;
     background-color: rgb(251, 249, 249);
     margin-bottom: 20px;
+    position: relative;
     
 }
 #slider {
