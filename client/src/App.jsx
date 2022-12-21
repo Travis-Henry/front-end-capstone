@@ -83,7 +83,7 @@ function App() {
               path="/reviews"
               element={
                 <Container className="mainContent">
-                  <Test />
+                  <ReviewsPage />
                 </Container>
               }
             ></Route>

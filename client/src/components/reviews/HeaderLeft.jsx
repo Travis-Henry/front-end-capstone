@@ -5,7 +5,7 @@ export default function HeaderLeft() {
   const [ currentMovie ] = useContext(listContextStates)
   const totalReviews = currentMovie.reviews.length;
   return (
-    <a href="#" className="reviews-header--left" tabindex="0">
+    <a href="/reviews" className="reviews-header--left" tabindex="0">
       <h3 className="user-reviews--title">
         User reviews
         <span className="review-count">{totalReviews}</span>
