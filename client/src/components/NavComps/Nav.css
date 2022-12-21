@@ -232,14 +232,20 @@
     background-color:rgb(75, 78, 81);
 }
 
+
+
 #modal-header {
-    background-color: #383838;
-    border-color: #383838;
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+    padding-left: 115px;
+    padding-right: 115px;
 }
 
 #modal-body{
     color: white;
-    background-color: #383838;
+    background-color: #1f1f1f;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .outer-list {
@@ -248,7 +254,6 @@
 
 .listItem {
     text-decoration-line: none;
-
     color: white;
 
 }
@@ -256,3 +261,39 @@
 .listItem:hover {
     color: #f5c518;
 }
+
+#iconContext-movie {
+    color: #f5c518;
+    margin-right: 5px;
+}
+
+#trending-icon {
+    color: #f5c518;
+    margin-right: 5px;
+}
+
+#tv-icon {
+    color: #f5c518;
+    margin-right: 5px;
+}
+
+#celebs-icon {
+    color: #f5c518;
+    margin-right: 5px;
+}
+
+#awards-icon {
+    color:#f5c518;
+    margin-right: 5px;
+}
+
+#watch-icon {
+    color: #f5c518;
+    margin-right: 5px;
+}
+
+#community-icon {
+    color: #f5c518;
+    margin-right: 5px;
+}
+
