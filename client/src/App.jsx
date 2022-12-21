@@ -11,6 +11,7 @@ import "./App.css";
 import axios from "axios";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Test from "./components/Test";
+import ReviewsPage from "./components/reviews/ReviewsPage";
 
 import { Container } from "react-bootstrap";
 
@@ -70,9 +71,11 @@ function App() {
                   <MoreToExplore
                     currentMovie={currentMovie}
                     allMovies={allMovies}
+                    setMovieID={setMovieID}
                   />
                   <Cast currentMovie={currentMovie} />
-                  {currentMovie.reviews && <Reviews />}
+                  {Object.keys(currentMovie).length > 0 &&
+                    currentMovie.reviews.length > 0 && <Reviews />}
                 </Container>
               }
             ></Route>
