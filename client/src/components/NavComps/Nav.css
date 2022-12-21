@@ -46,7 +46,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     visibility: visible;
-    
+    box-shadow: none;
 }
 #searchButton{
     background-color: rgb(255, 255, 255); 
@@ -54,6 +54,9 @@
     margin-top: 10px;
     margin-bottom: 10px;
     visibility: visible;
+    text-shadow: none;
+    box-shadow: none;
+    border-style: hidden;
 }
 #IMBdPro{
     justify-content: center;
