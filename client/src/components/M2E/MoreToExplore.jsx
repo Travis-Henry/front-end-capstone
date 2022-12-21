@@ -24,7 +24,9 @@ function MoreToExplore(props) {
     <Row>
       <Col>
         <div id="main-div">
-          <div className="main-text">More to explore</div>
+          <div>
+            <div className="main-text">More to explore</div>
+          </div>
 
           <div id="main-slider-container">
             <MdChevronLeft size={50} className="slider-icon left" onClick={slideLeft} />
