@@ -1,9 +1,22 @@
+#main-div {
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* position: relative; */
+}
+
 #main-slider-container {
     max-width: 880px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* max-width: 620px; */
     height: 420px;
     background-color: rgb(0, 0, 0);
     margin-bottom: 20px;
@@ -70,6 +83,7 @@
 .slider-card {
         border: 1px solid rgb(37, 36, 36);
         min-width: 170px;
+        width: 25%;
         height: 100%;
         background-color: rgb(25, 23, 23);
         border-radius: 3%;
@@ -142,7 +156,7 @@
     color:white;
     font-size: 32px;
     font-weight: 550;
-    margin: 0px;
+    margin-left: 25px;
     padding: 0px;
     border: 0px;
     vertical-align: baseline;
@@ -161,15 +175,3 @@
     width: 4px;
 }
 
-#main-div {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: black;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    position: relative;
-    align-content: center;
-}
