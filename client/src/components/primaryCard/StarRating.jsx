@@ -7,7 +7,7 @@ export default function StarRating(props) {
     <>
       <Row className="starRating">
         <Col>
-          <span className="">IMBd RATING</span>
+          <span className="">IMDb RATING</span>
         </Col>
       </Row>
       <Row className="starRating">
