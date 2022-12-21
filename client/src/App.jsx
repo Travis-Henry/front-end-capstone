@@ -9,6 +9,7 @@ import NavBar from "./components/NavComps/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import axios from "axios";
+import ReviewsPage from "./components/reviews/ReviewsPage";
 
 import { Container } from "react-bootstrap";
 
