@@ -40,7 +40,9 @@ function MoreToExplore(props) {
                 return (
                   <div className="slider-card">
                     <BsFillBookmarkPlusFill size={30} className="bookmark" />
-                    <img className="slider-card-image" src={movie.poster} />
+                    <a>
+                      <img className="slider-card-image" src={movie.poster}  onClick={()=>{props.setMovieID(movie.id)}}/>
+                    </a>
                     <div>
                       <Star />
                     </div>
