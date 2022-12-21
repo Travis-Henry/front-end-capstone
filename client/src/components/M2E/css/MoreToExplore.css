@@ -82,7 +82,7 @@
         background-color: rgb(255, 255, 255);
         border-radius: 2%;
         display: inline-block;
-        margin-left: 1px;
+        margin-left: 10px;
         margin-right: 10px;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -234,6 +234,7 @@
 
 .title-div {
     display: flex;
+    max-width: 880px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
