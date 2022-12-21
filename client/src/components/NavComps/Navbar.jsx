@@ -13,7 +13,7 @@ import "./Nav.css";
 
 function NavBar() {
   return (
-    <Navbar key="lg" bg="dark" variant="dark" expand="lg" className="mb-3">
+    <Navbar key="lg" variant="dark" expand="lg" className="mb-3">
       <Container id="navFull">
         <img
           src="/imdbLogo.svg"
@@ -78,30 +78,36 @@ function NavBar() {
               </Button>
               <div className="divider"></div>
               <Button id="watchList">
-
+                <svg 
+                id="svg-watchList"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#929292">
+                  <path d="M 17 3 c 1.05 0 1.918 0.82 1.994 1.851 L 19 5 v 16 l -7 -3 l -7 3 V 5 c 0 -1.05 0.82 -1.918 1.851 -1.994 L 7 3 h 10 Z m -4 4 h -2 v 3 H 8 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 V 7 Z"></path>
+                </svg>
+                <div id="div-watchList">Watchlist</div>
               </Button>
-              <Button id="signIn">
-
-              </Button>
-              <NavDropdown
-                title="EN"
-                id={`offcanvasNavbarDropdown-expand-lg`}
-              >
-                <NavDropdown.Item href="#action3">English(United States)</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action4">
-                  Francais(Canada)
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action5">
-                  Francais(France)
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action6">
-                  Deutsch(Deutschland)
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action7">
-                  Espanol(Espana)
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Button id="signIn"> Sign&nbsp;In</Button>
+              <div id="main-language">
+                <NavDropdown
+                  title="EN"
+                  id={`offcanvasNavbarDropdown-expand-lg`}
+                >
+                  <NavDropdown.Item href="#action3">English(United States)</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action4">
+                    Francais(Canada)
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action5">
+                    Francais(France)
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    Deutsch(Deutschland)
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action7">
+                    Espanol(Espana)
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </div>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
