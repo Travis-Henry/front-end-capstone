@@ -1,24 +1,43 @@
+#main-div {
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* position: relative; */
+}
+
 #main-slider-container {
+    max-width: 880px;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 620px;
     height: 420px;
-    background-color: rgb(251, 249, 249);
+    background-color: rgb(0, 0, 0);
     margin-bottom: 20px;
+    padding: 0 0 0 0;
+    position: relative;
     
 }
 #slider {
     
     width: 100%;
     height: 100%;
-    white-space: nowrap;
+    white-space: wrap;
     overflow-x: scroll;
     scroll-behavior: smooth;
     display: flex;
+    /* box-sizing: border-box; */
     justify-content: center;
     align-items: center;
-    padding-left: 1px;
+    position:relative;
+    /* padding-left: 1px; */
+
 }
 
 #slider::-webkit-scrollbar {
@@ -26,12 +45,13 @@
 }
 
 .slider-icon.left, .slider-icon.right {
-    opacity: 20%;
+    opacity: 80%;
     border-radius: 6%;
-    border:1px solid; 
-    color: rgb(251, 250, 250);
-    position:absolute;
+    border:1px solid white; 
+    color: rgb(255, 255, 255);
+    position: absolute;
     background-color: black;
+    z-index: 1;
 }
 
 .slider-icon.left{
@@ -43,23 +63,29 @@
 }
 
 .slider-icon:hover {
-    color:rgb(236, 186, 2)
+    color:rgb(254, 199, 0)
 }
 
 .bookmark {
     display: flex;
     justify-content: flex-start;
-    opacity: 50%;
+    opacity: 80%;
     left: 0px;
     top:0px;
+    color: rgb(246, 245, 245);
+    position: absolute;
 
+}
+.bookmark:hover {
+    color:yellow;
 }
 
 .slider-card {
-        border: 1px solid rgb(207, 204, 204);
+        border: 1px solid rgb(37, 36, 36);
         min-width: 170px;
+        width: 25%;
         height: 100%;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(25, 23, 23);
         border-radius: 3%;
         display: inline-block;
         margin-left: 1px;
@@ -67,21 +93,21 @@
         flex-direction: row;
         flex-wrap: nowrap;
         align-content: center;
-        justify-content: center;   
+        justify-content: center; 
+        position: relative;  
 }
 
 .slider-card-image{
     width: 100%;
     height: 60%;
     background-color: white;
-    margin-top: 0%;
-    
+    top: 0px;  
     
 }
 
 .card-button{
     font-size: medium;
-    color:blue;
+    color:rgb(45, 103, 218);
     width: 90%;
 }
 
@@ -91,26 +117,27 @@
     border-radius: 50%;  
     width: 30px;
     margin-top: 5%;
-    margin-left: 75%;        
+    margin-left: 75%;  
+    color:white;      
 }
 #card-button{
     font-family:Arial, Helvetica, sans-serif;
     font-size: small solid;
     margin: 1px;
-    background-color: rgb(224, 222, 222);
-    border: rgb(212, 210, 210) solid 1px;
+    background-color: rgb(55, 54, 54);
+    border: rgb(55, 54, 54);solid 1px;
     color:rgb(5, 106, 208)
     
 }
 
 .card-info-div:hover{
-    background-color: rgb(198, 193, 193);
+    background-color: rgb(78, 75, 75);
     
 }
 
 .star{
-    color:rgb(197, 181, 9);
-    fill:rgb(154, 154, 4)
+    color:rgb(253, 232, 5);
+    fill:rgb(251, 251, 1)
 }
 .star-text{
     color: gray;
@@ -121,20 +148,22 @@
 .title{
     font-size: small;
     text-overflow: ellipsis;
+    color:white;
 }
 
 .main-text {
     font-family: Arial, Helvetica, sans-serif;
-    color: black solid;
+    color:white;
     font-size: 32px;
     font-weight: 550;
-    margin: 0px;
+    margin-left: 25px;
     padding: 0px;
     border: 0px;
     vertical-align: baseline;
 }
 
 .main-text::before{
+    display: flex;
     background: #f5c518;
     align-self: flex-start;
     box-sizing: border-box;
@@ -146,10 +175,3 @@
     width: 4px;
 }
 
-#main-div {    
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: nowrap; 
-}

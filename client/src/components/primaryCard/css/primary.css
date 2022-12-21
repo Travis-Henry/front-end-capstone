@@ -1,0 +1,106 @@
+.primaryCard {
+    background-color: #1f1f1f;
+    margin: 0;
+    color: white;
+    
+}
+
+.primaryCard ul{
+    display: inline-flex;
+    padding-left: 0;
+    margin-left: auto;
+}
+
+.primaryCard li {
+    display: inline-block;
+}
+
+/* .primaryCard .IMBdPro {
+    //display: inline-flex;
+} */
+
+.primaryCard li::before {
+    display: inline-block;
+    color: white;
+    content: "\2022";
+    padding: 1px;
+    border-radius: 50%;
+    
+    font-size: 1rem;
+    line-height: 0.5rem;
+    margin-top: 0px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.2rem;
+    margin-left: 0.5rem;
+}
+
+.IMBdPro {
+    margin-left: 0.75rem;
+}
+
+.IMBdPro::before{
+    content: "\007C";
+    margin-right: 0.75rem;
+    color: white;
+
+    
+}
+
+.IMBdPro::after {
+    content: "\007C";
+    margin-left: 0.75rem;
+    color: white;
+    height: 1.5rem;
+    width: 0.75rem;
+    
+}
+
+.primaryCard button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    font-size: .875rem;
+    display: inline-block;
+    color: white;
+}
+
+.primaryCard button:hover {
+    background-color: #313131;
+    border-radius: 4px;
+}
+
+button span {
+    line-height: 1.15rem;
+    margin-left: 0.25rem;
+    
+}
+
+button svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+}
+
+.primaryCard path {
+    fill: white;
+}
+
+.primaryCard a {
+    color: white;
+    text-decoration: none;
+}
+
+.primaryCard a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.primary-details {
+    border: top 1px;
+}
+
+.shareBtn {
+    display: inline-flex;
+}

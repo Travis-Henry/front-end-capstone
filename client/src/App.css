@@ -1,18 +1,24 @@
+
+
 body {
   background-color: black;
+
 }
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; 
+
 }
 
 .mainContent {
   background-color: #ffffff;
-  padding: 0;
+  padding: 0px;
 }
 
 .mb-3{
   width: 100%;
 }
+
+

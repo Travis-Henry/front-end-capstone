@@ -1,0 +1,44 @@
+#iconContext-chevron-right-inline {
+  margin-left: 12px;
+}
+
+#class-header--left {
+  background-color: rgba(0,0,0,0);  
+  color: rgba(0,0,0,0.87);
+  cursor: pointer;
+  display: block;
+  text-decoration-color: rgba(0,0,0,0.87);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-transform: none;
+}
+
+#castHeading {  
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: .00735em;
+  line-height: 2.5rem;
+  margin-block-end: 1em;
+  margin-block-start: 1em;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  max-height: 2.4em;
+  padding-left: .75rem;
+  position: relative;
+}
+
+#castHeading:before {
+  background: #f5c518;  
+  content: "";
+  margin-left: -0.70rem;
+  align-self: flex-start;
+  position: absolute;
+  height: 45px;
+  width: 4px;
+}
+
+#castImgCol {
+  width: 96px;
+  height: 96px;
+}
