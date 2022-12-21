@@ -225,11 +225,9 @@
     padding: 0px;
 
 }
-<<<<<<< HEAD
 #main-language:hover{
     background-color:rgb(75, 78, 81);
 }
-=======
 
 #modal-header {
     background-color: #383838;
@@ -255,4 +253,3 @@
 .listItem:hover {
     color: #f5c518;
 }
->>>>>>> dev
