@@ -1,4 +1,8 @@
+.mb-3{
+    background-color: #121212;
+}
 #navFull{
+    background-color: #121212;
     align-items: center;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
@@ -21,8 +25,8 @@
     flex-direction: row;
     flex-shrink: 0;
     flex-wrap: nowrap;
-    background-color: rgb(33, 37, 41);
-    border-color: rgb(33, 37, 41);
+    background-color: #121212;
+    border-color: #121212;
     padding-top: 6px;
 /*new css for menuButton*/
     margin-left: 8px;
@@ -35,21 +39,25 @@
     margin-right: 8px;
 }
 #searchBar{
+    height: 36px;
     border-width: 1px;
     border-color: rgb(255, 255, 255);
     margin-top: 10px;
     margin-bottom: 10px;
+    visibility: visible;
+    
 }
 #searchButton{
     background-color: rgb(255, 255, 255); 
     border-color: rgb(255, 255, 255);
     margin-top: 10px;
     margin-bottom: 10px;
+    visibility: visible;
 }
 #IMBdPro{
     justify-content: center;
-    background-color: rgb(33, 37, 41);
-    border-color: rgb(33, 37, 41);
+    background-color: #121212;
+    border-color: #121212;
     letter-spacing: .28px;
     line-height: 24px;
     padding-left: 8px;
@@ -66,7 +74,6 @@
     flex-direction: row;
     flex-shrink: 0;
     flex-wrap: nowrap; 
-
 }
 #IMBdPro:hover{
     background-color:rgb(75, 78, 81);
@@ -81,11 +88,142 @@
     box-sizing: border-box;
     border: 1px solid #383838;
     margin-top: 12px;
-    
+    background-color: #383838;
     width: 1px;
     height: 2rem;
     margin-right: .5rem;
     margin-left: .5rem;
- 
+}
+#watchList{
+    background-color: #121212;
+    border-color: #121212;
+    align-items: center;
+    appearance: none;
+    box-sizing: border-box;
+    display: flex;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+    justify-content: center;
+    letter-spacing: .28px;
+    line-height: 24px;
+    max-width: 100%;
+    min-height: 36px;
+    position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+#watchList:hover{
+    background-color:rgb(75, 78, 81);
+}
+#svg-watchList{
+    height: 24px;
+    width: 24px;
+    display: block;
+    overflow-clip-margin: content-box;
+    font-stretch: 100%;
+    font-weight: 500;
+    letter-spacing: .28px;
+    line-height: 24px;
+    opacity: .54;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-size-adjust: 100%;
+    text-align: center;
+    margin-left: -6px;
+    margin-right: 4px;
+    word-spacing: 0px;
+    visibility: visible;
+}
+#div-watchList{
+    display: flex; 
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    height: 24px;
+    letter-spacing: .28px;
+    line-height: 24px;
+    text-overflow: ellipsis;
+    text-size-adjust: 100%;
+    vertical-align: baseline;
+    white-space: nowrap;
+    width: 61px;
+    -webkit-box-align: center;
+}
+#signIn{
+    flex-shrink: 0;
+    background-color: #121212;
+    border-color: #121212;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    height: 36px;
+    justify-content: center;
+    letter-spacing: .28px;
+    line-height: 24px;
+    width: auto;
+    max-width: 100%;
+    min-width: 3rem;
+    min-height: 2.25rem;
+    vertical-align: middle;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+#signIn:hover{
+    background-color:rgb(75, 78, 81);
+}
+#main-language{
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 7%;
+    display: inline-flex;
+    flex-shrink: 0;
+    background-color: #121212;
+    border-color: #121212;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+    vertical-align: middle;
+    height: 33px;
+    letter-spacing: .5px;
+    line-height: 14px;
+    position: relative;
+    width: 63px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+#offcanvasNavbarDropdown-expand-lg{
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    height: 24px;
+    margin-top: 4px;
+    padding: 0px;
 
+}
+#main-language:hover{
+    background-color:rgb(75, 78, 81);
 }
