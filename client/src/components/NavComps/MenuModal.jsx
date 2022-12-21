@@ -52,8 +52,36 @@ function MenuModal() {
                 <h3>Trending</h3>
                 <div>
                   <ul id="trending-list">
-                    <a href="#">
+                    <a href="#" className="listItem">
                       <span>Best of 2022</span>
+                    </a>
+                    <br></br>
+                    <a href="#" className="listItem">
+                      <span>Top 250 Movies</span>
+                    </a>
+                    <br></br>
+                    <a href="#" className="listItem">
+                      <span>Most Popular Movies</span>
+                    </a>
+                    <br></br>
+                    <a href="#" className="listItem">
+                      <span>Top 250 TV Shows</span>
+                    </a>
+                    <br></br>
+                    <a href="#" className="listItem">
+                      <span>Most Popular TV Shows</span>
+                    </a>
+                    <br></br>
+                    <a href="#" className="listItem">
+                      <span>Most Popular Video Games</span>
+                    </a>
+                    <br></br>
+                    <a href="#" className="listItem">
+                      <span>Most Popular Music Videos</span>
+                    </a>
+                    <br></br>
+                    <a href="#" className="listItem">
+                      <span>Most Popular Podcasts</span>
                     </a>
                   </ul>
                 </div>

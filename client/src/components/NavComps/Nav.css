@@ -55,3 +55,14 @@
 .btn-close {
     color: #f5c518;
 }
+
+.listItem {
+    text-decoration-line: none;
+
+    color: white;
+
+}
+
+.listItem:hover {
+    color: #f5c518;
+}
