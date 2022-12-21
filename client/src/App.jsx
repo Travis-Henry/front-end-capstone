@@ -62,10 +62,9 @@ function App() {
         <Container className="mainContent">
           <Primary currentMovie={currentMovie} />
           <Details details={currentMovie} />
-          <MoreToExplore currentMovie={currentMovie} allMovies={allMovies} />
+          <MoreToExplore currentMovie={currentMovie} allMovies={allMovies} setMovieID={setMovieID}/>
           <Cast currentMovie={currentMovie} />
-          {currentMovie.reviews && 
-            <><Reviews /><ReviewsPage /></>}
+          {Object.keys(currentMovie).length > 0 && currentMovie.reviews.length > 0 && <Reviews />}
         </Container>
       </div>
     </listContextStates.Provider>
