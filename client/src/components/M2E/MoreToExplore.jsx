@@ -6,6 +6,8 @@ import Button from "react-bootstrap/Button";
 import { BsFillBookmarkPlusFill } from "react-icons/bs";
 import { Row, Col, Container, Image } from "react-bootstrap";
 import { BsFillBookmarkCheckFill } from "react-icons/bs";
+import { RiQuestionLine } from "react-icons/ri";
+
 
 
 function MoreToExplore(props) {
@@ -24,7 +26,12 @@ function MoreToExplore(props) {
     <Row>
       <Col>
         <div id="main-div">
-          <div className="main-text">More to explore</div>
+          <div className="title-div">
+            <p className="main-text">More to explore</p>
+            <a href="https://help.imdb.com/article/imdb/discover-watch/what-is-the-more-like-this-section/GPE7SPGZREKKY7YN?ref_=cons_tt_rec_lm#">
+              <RiQuestionLine size={20} className="moreInfo" />
+            </a>
+          </div>
 
           <div id="main-slider-container">
             <MdChevronLeft size={50} className="slider-icon left" onClick={slideLeft} />

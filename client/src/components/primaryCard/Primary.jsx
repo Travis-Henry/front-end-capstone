@@ -67,10 +67,10 @@ function Primary(props) {
               </ul>
             </Row>
           </Col>
-          <Col>
+          <Col className="d-none d-lg-block">
             <Row>
               <Col>
-                <StarRating />
+                <StarRating {...props} />
               </Col>
               <Col>
                 <UserRating />
@@ -104,6 +104,17 @@ function Primary(props) {
         <Row>
           <Col>
             <p>{props.currentMovie.plot}</p>
+          </Col>
+        </Row>
+        <Row className="d-lg-none">
+          <Col>
+            <StarRating {...props} />
+          </Col>
+          <Col>
+            <UserRating />
+          </Col>
+          <Col>
+            <Popularity />
           </Col>
         </Row>
         <Row>
