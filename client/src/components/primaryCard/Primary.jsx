@@ -96,7 +96,7 @@ function Primary(props) {
                 width="100%"
                 height="100%"
                 allowFullScreen
-                src="https://imdb-video.media-imdb.com/vi5872665/1434659607842-pgv4ql-1563552994984.mp4?Expires=1671649852&Signature=qV7~VCNsFr0HU0Pf32SM0QbhJZRBJL0pQrnIFxXvGpXhmWiEYPLcPdGilT9~bapwk02UAE-SM9c~0hDGR2611mx8yPLbdwqcJl~EXWbXL~I37RiEagPl6EYme0oMNdAt-dXn9EYY6nq5T17uGZogpWkYCCFsJd7yenUkzJZ8kZL21JyEoX0gv6xSF0nTxIcpa7UqhC3KJ9hM28Fan0gBk7sIgD9tnRAbBa6JshoCkCYaGPdFOKXnE5JF~rNYtL-ilNC6ZopSdhEUYod2AeTruIMs2wItcc031EevcPSmduAioIKlkBxcu0mXtUqU2KxWo7WWaMWn3drBVndW3fbpDA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                src={props.currentMovie.trailer}
               ></iframe>
             </div>
           </Col>

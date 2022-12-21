@@ -28,9 +28,11 @@ function MoreToExplore(props) {
         <div id="main-div">
           <div className="title-div">
             <p className="main-text">More to explore</p>
-            <a href="https://help.imdb.com/article/imdb/discover-watch/what-is-the-more-like-this-section/GPE7SPGZREKKY7YN?ref_=cons_tt_rec_lm#">
-              <RiQuestionLine size={20} className="moreInfo" />
-            </a>
+            <div className="more-info-div">
+              <a href="https://help.imdb.com/article/imdb/discover-watch/what-is-the-more-like-this-section/GPE7SPGZREKKY7YN?ref_=cons_tt_rec_lm#">
+                <RiQuestionLine size={20} className="moreInfo" />
+              </a>
+            </div>
           </div>
 
           <div id="main-slider-container">
@@ -40,12 +42,16 @@ function MoreToExplore(props) {
                 return (
                   <div className="slider-card">
                     <BsFillBookmarkPlusFill size={30} className="bookmark" />
-                    <img className="slider-card-image" src={movie.poster} />
+                    <a>
+                      <img className="slider-card-image" src={movie.poster} onClick={() => { props.setMovieID(movie.id) }} />
+                    </a>
                     <div>
                       <Star />
                     </div>
                     <p className="title">{movie.moviename}</p>
-                    <Button id="card-button">Watch options</Button>
+                    <Button id="card-button">
+                      <div className="button-text"></div>
+                    </Button>
                     <div className="card-info-div">
                       <CiCircleInfo size={(25)} className="card-info" />
                     </div>

@@ -20,12 +20,12 @@ export default function StarRating(props) {
             </Col>
             <Col>
               <Row>
-                <Col>{props.currentMovie.starrating}</Col>
+                <Col>{props.currentMovie.stars}</Col>
                 <Col>/10</Col>
               </Row>
               <Row>
                 <Col>
-                  <span>169k</span>
+                  <span>{props.currentMovie.number_of_star_ratings}</span>
                 </Col>
               </Row>
             </Col>

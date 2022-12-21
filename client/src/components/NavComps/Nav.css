@@ -13,6 +13,7 @@
     justify-content: space-between;
     letter-spacing: .5px;
     line-height: 24px;
+    max-width: 1024px;
     text-size-adjust: 100%;
 }
 #navTopTotal{
@@ -224,6 +225,34 @@
     padding: 0px;
 
 }
+<<<<<<< HEAD
 #main-language:hover{
     background-color:rgb(75, 78, 81);
 }
+=======
+
+#modal-header {
+    background-color: #383838;
+    border-color: #383838;
+}
+
+#modal-body{
+    color: white;
+    background-color: #383838;
+}
+
+.outer-list {
+    color: white;
+}
+
+.listItem {
+    text-decoration-line: none;
+
+    color: white;
+
+}
+
+.listItem:hover {
+    color: #f5c518;
+}
+>>>>>>> dev
