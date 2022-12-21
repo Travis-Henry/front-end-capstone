@@ -65,7 +65,7 @@
     display: flex;
     justify-content: flex-start;
     opacity: 80%;
-    left: 0px;
+    left: -4px;
     top:0px;
     color: rgb(246, 245, 245);
     position: absolute;
@@ -147,8 +147,12 @@
 
 }
 
-
+.star-div {
+    padding: 5px;
+    padding-bottom: 0px;
+}
 .star{
+    margin: 5px;
     color:rgb(253, 232, 5);
     fill:rgb(251, 251, 1)
 }
@@ -156,6 +160,23 @@
     color: gray;
     fill:gray;
     font-size: small;
+}
+
+.star-button {
+    background-color: white;
+    border: white;
+    border-color:blue
+    
+}
+
+.star-svg{
+    border-color: blue;
+    fill:rgb(5, 106, 208);
+    font-size: 10px;
+}
+
+.star-button:hover{
+    background-color: rgb(242, 244, 246);
 }
 
 .title{
@@ -170,8 +191,8 @@
     color:rgb(0, 0, 0);
     font-size: 32px;
     font-weight: 540;
-    margin-left: 15px;
-    padding: 0px;
+    margin-left: 28px;
+    /* padding: 12px; */
     border: 0px;
     vertical-align: baseline;
 }
