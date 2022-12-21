@@ -9,9 +9,9 @@ export default function Footers() {
   const postDate = currentMovie.reviews[i].revdate;
   console.log('postDate', postDate)
   return (
-    <ul class="ipc-inline-list ipc-inline-list--show-dividers ipc-inline-list--inline base" role="presentation">
-      <li class="ipc-inline-list__item"><a class="ipc-link ipc-link--base" role="button" tabindex="0" aria-disabled="false" data-testid="author-link" href="/user/ur0783721/?ref_=tt_urv_usr">{userName}</a></li>
-      <li class="ipc-inline-list__item review-date">{postDate}</li>
+    <ul className="ipc-inline-list ipc-inline-list--show-dividers ipc-inline-list--inline base" role="presentation">
+      <li className="ipc-inline-list__item"><a className="ipc-link ipc-link--base" role="button" tabindex="0" aria-disabled="false" data-testid="author-link" href="/user/ur0783721/?ref_=tt_urv_usr">{userName}</a></li>
+      <li className="ipc-inline-list__item review-date">{postDate}</li>
     </ul>
   )
 }
