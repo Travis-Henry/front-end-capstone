@@ -39,6 +39,15 @@
 
     -Dustin Swartzbaugh
     -Alex Burris
+        Contributed: Navbar, Details, Reviews Table
+        GitHub: https://github.com/AlexTheHomebody
+        LinkedIn: https://www.linkedin.com/in/alex-d-burris/
     -Bekmambet Alimbekov
+        Contributed: More to explore, seed file in database
+        LinkedIn: https://www.linkedin.com/in/bekmambet-alimbekov-00a1b924b/
+        Github: @BAlimbekov
     -Brian Ortiz
+       Contributed: cast, nav bar, menu modal, and server migration/seed
+       GitHub: https://github.com/Ozi-b
+       LinkedIn: https://www.linkedin.com/in/brian-ortiz-543477233/
     -Travis Henry

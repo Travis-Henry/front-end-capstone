@@ -32,7 +32,7 @@ export default function ReviewList({...review}) {
         </div>
         {/* <ShowContext.Provider value={ style={style} }> */}
         <div className="r-content" style={style} onClick={()=>setShow(!show)}>
-          {review.content}
+          {review.content}<br></br><br></br>{review.content}<br></br><br></br>
         </div>
         {/* </ShowContext.Provider> */}
       </div>

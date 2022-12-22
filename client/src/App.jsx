@@ -48,7 +48,7 @@ function App() {
   //Gets all movies
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/movie`)
+      .get(`https://imdb-api-ouoz.onrender.com/movie`)
       .then((res) => {
         setAllMovies(res.data);
       })
