@@ -1,17 +1,20 @@
 import React, { useContext, useState } from 'react'
 import { listContextStates } from '../../App'
 import { Image } from 'react-bootstrap'
+import { ColorRing } from 'react-loader-spinner'
 import ReviewList from './ReviewList'
 import './reviewsCss/reviewsPage.css'
 
 export default function ReviewsPage() {
-  const [currentMovie] = useContext(listContextStates)
-  const [isLoading, setIsLoading] = useState(true)
+  const [currentMovie, setCurrentMovie, isLoading, setIsLoading] = useContext(listContextStates)
+
   const reviews = currentMovie.reviews
   const poster = currentMovie.poster
   const dateString = currentMovie.releasedate;
   const date = new Date(dateString);
   const year = date.getFullYear();
+
+ 
 
   while(isLoading){
     if(reviews){
@@ -19,7 +22,16 @@ export default function ReviewsPage() {
       isLoading === false;
     }
     return (
-      <h2>...Loading</h2>
+      <ColorRing
+      className="spinner"
+  visible={true}
+  height="80"
+  width="80"
+  ariaLabel="blocks-loading"
+  wrapperStyle={{}}
+  wrapperClass="blocks-wrapper"
+  colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+/>
     )
   }
   while(!isLoading){

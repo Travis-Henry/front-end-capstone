@@ -2,7 +2,7 @@
   margin-left: 12px;
 }
 
-#class-header--left {
+#cast-header--left {
   background-color: rgba(0,0,0,0);  
   color: rgba(0,0,0,0.87);
   cursor: pointer;
@@ -12,6 +12,17 @@
   text-decoration-style: solid;
   text-decoration-thickness: auto;
   text-transform: none;
+}
+
+#cast-chevron {
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+#cast-chevron:hover {
+  fill: #f5c518;
+  text-decoration: none;
+  font-weight: none;
 }
 
 #castHeading {  

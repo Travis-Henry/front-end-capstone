@@ -18,7 +18,7 @@ import { Container } from "react-bootstrap";
 function App() {
   const [movieID, setMovieID] = useState(1);
   const [currentMovie, setCurrentMovie] = useState({});
-
+  const [isLoading, setIsLoading] = useState(true)
   const [allMovies, setAllMovies] = useState([]);
 
   let props = {
@@ -29,6 +29,11 @@ function App() {
     allMovies,
     setAllMovies,
   };
+
+  let style = isLoading === true ? 
+  {"backgroundColor": "black", "textAlign": "center"} : 
+  {"backgroundColor": "white", "textAlign": "left"}
+
   //Get request for movie data
   useEffect(() => {
     axios
@@ -54,6 +59,8 @@ function App() {
     // setMovieID: setMovieID,
     currentMovie,
     setCurrentMovie,
+    isLoading,
+    setIsLoading,
   ];
 
   return (
@@ -82,7 +89,7 @@ function App() {
             <Route
               path="/reviews"
               element={
-                <Container className="mainContent">
+                <Container className="mainContent" style={style}>
                   <ReviewsPage />
                 </Container>
               }

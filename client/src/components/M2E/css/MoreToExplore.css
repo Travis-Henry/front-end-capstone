@@ -129,11 +129,11 @@
     width: 90%;
     font-stretch: 100%;
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size: medium;
+    font-size: 14px;
     margin: 5%;
-    background-color: rgb(214, 210, 210);
-    border: rgb(55, 54, 54);solid 1px;
-    color:rgb(5, 106, 208)
+    background-color: rgb(0, 0, 0, 0.08);
+    border: rgb(55, 54, 54);
+    color:rgb(14, 99, 190)
     
 }
 
