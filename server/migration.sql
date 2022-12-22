@@ -12,13 +12,15 @@ CREATE TABLE movies (
   releaseDate varchar(25),
   rating varchar(10),
   stars varchar(5),
+  number_of_star_ratings varchar(10),
   runtime varchar(10),
   studio varchar(255),
   language varchar(255),
-  budget numeric,
-  globalsales numeric,
+  budget text,
+  globalsales text,
   plot text,
-  poster text
+  poster text,
+  trailer text
 );
 
 CREATE TABLE castList (
