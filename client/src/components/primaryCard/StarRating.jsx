@@ -7,13 +7,15 @@ export default function StarRating(props) {
     <>
       <Row className="starRating justify-content-center">
         <Col className="justify-content-center">
-          <span className="d-flex">IMDb RATING</span>
+          <Row md="auto">
+            <span className="d-flex">IMDb RATING</span>
+          </Row>
         </Col>
       </Row>
       <Row className="starRating">
         <button>
           <Row className="align-items-center">
-            <Col md={2}>
+            <Col xl="auto" lg="auto" md="auto" sm="auto">
               <Row className="align-items-center">
                 <Col>
                   <svg>
