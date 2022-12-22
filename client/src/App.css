@@ -1,6 +1,9 @@
 
 
 body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
   background-color: black;
 
 }
@@ -15,6 +18,7 @@ body {
 .mainContent {
   background-color: #ffffff;
   padding: 0px;
+  margin-top: 10rem;
 }
 
 .mb-3{
