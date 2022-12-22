@@ -1,3 +1,22 @@
+.starRating {
+    
+}
+
 .starRating path {
     fill: #f5c518;
+    
+}
+
+.starStyle {
+    font-size: 20px;
+    color: white;
+}
+
+.outOf {
+    font-size: 16px;
+    color: #bcbcbc;
+}
+
+.totalReviews {
+    color: #bcbcbc;
 }

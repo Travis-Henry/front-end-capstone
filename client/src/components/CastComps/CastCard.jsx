@@ -8,11 +8,18 @@ function CastCard(props) {
     <>
       <Col md={6}>
         <Row md={2}>
-          <Col id="castImgCol" className="ms-2 mb-3 px-0">
+          <Col
+            id="castImgCol"
+            className="ms-2 mb-3 px-0"
+            style={{ backgroundColor: "white" }}
+          >
             <Image
               roundedCircle="true"
               src={props.items.photo || "/blankActor.svg"}
-              style={{ width: "96px", height: "96px" }}
+              style={{
+                width: "96px",
+                height: "96px",
+              }}
             />
           </Col>
           <Col md={8}>
