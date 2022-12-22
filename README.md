@@ -41,4 +41,7 @@
     -Alex Burris
     -Bekmambet Alimbekov
     -Brian Ortiz
+       Contributed: cast, nav bar, menu modal, and server migration/seed
+       GitHub: https://github.com/Ozi-b
+       LinkedIn: https://www.linkedin.com/in/brian-ortiz-543477233/
     -Travis Henry
