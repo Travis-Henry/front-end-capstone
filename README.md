@@ -2,11 +2,11 @@
 
 # Project Overview
 
-Modern & Interactive front-end replication web application of IMDb. Developed and designed from scratch.
+Modern & Interactive front-end replication of a web page from IMDb. Developed and designed from a team of 5 by employing Agile practices. The project was created from scratch.
 
 Contains 5 main components which are the Main card, Cast, Reviews, Details, and More to Explore.
 
-The goal of this project was to immitate a web page of a popular website both visua
+The goal of this project was to immitate a web page of a popular website both visualy and functionaly.
 
 # Tech Stack
 
