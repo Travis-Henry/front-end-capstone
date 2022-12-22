@@ -9,7 +9,7 @@ import NavBar from "./components/NavComps/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import axios from "axios";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Test from "./components/Test";
 import ReviewsPage from "./components/reviews/ReviewsPage";
 
