@@ -40,6 +40,9 @@
     -Dustin Swartzbaugh
     -Alex Burris
     -Bekmambet Alimbekov
+        Contributed: More to explore, seed file in database
+        LinkedIn: https://www.linkedin.com/in/bekmambet-alimbekov-00a1b924b/
+        Github: @BAlimbekov
     -Brian Ortiz
        Contributed: cast, nav bar, menu modal, and server migration/seed
        GitHub: https://github.com/Ozi-b
