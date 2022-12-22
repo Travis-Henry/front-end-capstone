@@ -7,7 +7,7 @@ export default function StarRating(props) {
     <>
       <Row className="starRating justify-content-center">
         <Col className="justify-content-center">
-          <Row md="auto">
+          <Row>
             <span className="d-flex">IMDb RATING</span>
           </Row>
         </Col>
