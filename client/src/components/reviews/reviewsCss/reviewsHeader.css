@@ -30,6 +30,7 @@
   font-weight: 500;
   letter-spacing: .00735em;
   line-height: 2.5rem;
+  color: rgba(0,0,0,0.87);
   margin-block-end: 1em;
   margin-block-start: 1em;
   margin-bottom: 10px;
@@ -47,8 +48,12 @@
   text-decoration-color: rgba(0,0,0,0.87);
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: auto;
   text-transform: none;
+}
+
+.icon--chevron:hover {
+  color: #f5c518;
+  fill: #f5c518;
 }
 
 .review-count {
@@ -77,6 +82,7 @@
 }
 
 .reviews-header--right {
+  padding: .5rem;
   align-items: center;
   align-self: center;
   color: rgba(0,0,0,0.87);
@@ -84,6 +90,11 @@
   flex-shrink: 0;
   max-height: 2.4em;
   vertical-align: baseline;
+}
+
+.reviews-header--right:hover {
+  background-color: rgba(55, 79, 145, 0.156);
+  border-radius: 5px;
 }
 
 .add-review-button {
