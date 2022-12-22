@@ -39,6 +39,9 @@
 
     -Dustin Swartzbaugh
     -Alex Burris
+        Contributed: Navbar, Details, Reviews Table
+        GitHub: https://github.com/AlexTheHomebody
+        LinkedIn: https://www.linkedin.com/in/alex-d-burris/
     -Bekmambet Alimbekov
         Contributed: More to explore, seed file in database
         LinkedIn: https://www.linkedin.com/in/bekmambet-alimbekov-00a1b924b/
