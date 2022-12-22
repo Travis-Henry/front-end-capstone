@@ -51,3 +51,6 @@
        GitHub: https://github.com/Ozi-b
        LinkedIn: https://www.linkedin.com/in/brian-ortiz-543477233/
     -Travis Henry
+        Contributed: Primary card, Server, DB seed and migration file
+        GitHub: https://github.com/Travis-Henry
+        LinkedIn: https://www.linkedin.com/in/travis-henry-7aa50b247
