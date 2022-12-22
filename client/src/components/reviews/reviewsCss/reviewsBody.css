@@ -63,6 +63,7 @@
 .review-card-actions {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 /* .user-review--content:after {
@@ -97,6 +98,8 @@
   align-items: flex-start;
   display: inline-block;
   flex-shrink: 0;
+  height: 50px;
+  width: 50px;
   padding-bottom: 1px;
   padding-top: 1px;
   padding-right: 6px;
@@ -114,11 +117,20 @@
   appearance: button;
   opacity: 1;
 }
+
+.ipc-icon-button:hover {
+    clip-path: circle(40%);
+    background-color: rgba(164, 164, 164, 0.218);
+}
+
 .ipc-voting__icon--up {
     align-items: flex-start;
     display: inline-block;
     flex-shrink: 0;
+    height: 50px;
+    width: 50px;
     margin: 0;
+    margin-right: .15rem;
     padding-bottom: 1px;
     padding-top: 1px;
     padding-right: 6px;
@@ -135,6 +147,16 @@
     border-style: outset;
     appearance: button;
     opacity: 1;
+}
+
+.ipc-voting__icon--up:hover {
+  clip-path: circle(40%);
+  background-color: rgba(164, 164, 164, 0.218);
+}
+
+.ipc-voting__icon--down:hover {
+  clip-path: circle(40%);
+  background-color: rgba(164, 164, 164, 0.218);
 }
 
 .ipc-voting__icon--up:before {
@@ -154,6 +176,8 @@
   display: inline;
   flex-shrink: 0;
   margin: 0;
+  height: 50px;
+  width: 50px;
   padding-bottom: 1px;
   padding-top: 1px;
   padding-right: 6px;
