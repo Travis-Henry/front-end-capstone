@@ -1,14 +1,19 @@
 # front-end-capstone
 
-# Contributers
+# How to run locally
 
-    -Dustin Swartzbaugh
-    -Alex Burris
-    -Bekmambet Alimbekov
-    -Brian Ortiz
-    -Travis Henry
+    -First clone this repo
+    -Navigate to the ./server/ folder
+    -Set up a postgresql database on your machine by using the migration.sql and seed.sql files
+    -Edit the config.js file to replace the dev 'connectionString' with your database url
+    -Run command 'npm install' inside ./server/ folder to install dependencies
+    -Use command 'node server.js' to start server
+    -Navigate to ./client/ folder
+    -Run command 'npm install' to install dependencies
+    -Run command 'npm run dev' to start
+    -CTRL click on the link and enjoy the site!
 
-# Git commands
+# Git workflow commands
 
     -git checkout -b your-branch-name
     -git push
@@ -29,5 +34,11 @@
 # Wireframe link
 
     - https://excalidraw.com/#json=PiZ1zFGmrLQ8KbhyDkbRR,pxMbE2CyCNU3b5Enz_GpVw
-   
-Change 1
+
+# Contributers
+
+    -Dustin Swartzbaugh
+    -Alex Burris
+    -Bekmambet Alimbekov
+    -Brian Ortiz
+    -Travis Henry
