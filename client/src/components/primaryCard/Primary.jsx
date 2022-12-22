@@ -92,15 +92,6 @@ function Primary(props) {
             <Popularity />
           </Col>
         </Row>
-        <Row>
-          <Col>Director:</Col>
-        </Row>
-        <Row className="primary-details">
-          <Col>Writers</Col>
-        </Row>
-        <Row>
-          <Col>Stars</Col>
-        </Row>
       </Container>
     </>
   );
