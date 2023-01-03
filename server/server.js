@@ -23,7 +23,7 @@ app.get('/movie/:id', (req, res, next)=>{
     .then(results=>{
 
         //Second query to get reviews
-        pool.query(`SELECT * FROM reviews WHERE movie_id = ${req.params.id}`)
+        pool.query(`SELECT * FROM reviews WHERE movie_id = 1`)
         .then(reviews=>{
 
             //Third query to get cast
